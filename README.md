@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-# englify_project
+# ENGLIFY — English Learning App
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
+Englify is an interactive English-learning application designed to help students develop vocabulary, pronunciation, and grammar skill
+but this application is still on development stage
 
 A few resources to get you started if this is your first Flutter project:
 
