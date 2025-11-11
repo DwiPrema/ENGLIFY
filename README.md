@@ -1,9 +1,16 @@
-# 📘 Englify
+# englify_project
 
-Englify adalah aplikasi edukasi berbasis **Flutter** yang membantu pengguna mempelajari kosakata bahasa Inggris melalui tampilan sederhana dan mudah digunakan.
+A new Flutter project.
 
-## ✨ Fitur
-- Daftar kosakata berdasarkan kategori
-- Informasi detail kata (arti, pelafalan)
-- UI ringan & responsif
-- Aset gambar representatif
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
