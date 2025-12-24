@@ -1,6 +1,6 @@
-import 'package:englify_project/widgets/card.dart';
+import 'package:project_englify/widgets/card.dart';
 import 'package:flutter/material.dart';
-import 'package:englify_project/models/model_table.dart';
+import 'package:project_englify/models/model_table.dart';
 
 void main() {
   runApp(const DetailAdjectivePage());

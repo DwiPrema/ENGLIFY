@@ -1,7 +1,7 @@
-import 'package:englify_project/pages/detailpage_animal.dart';
-import 'package:englify_project/widgets/card.dart';
+import 'package:project_englify/pages/detailpage_animal.dart';
+import 'package:project_englify/widgets/card.dart';
 import 'package:flutter/material.dart';
-import 'package:englify_project/models/model_table.dart';
+import 'package:project_englify/models/model_table.dart';
 
 class AnimalPage extends StatelessWidget {
   const AnimalPage({super.key});

@@ -1,14 +1,19 @@
-import 'package:englify_project/pages/level_beginner.dart';
-import 'package:englify_project/widgets/card.dart';
+import 'package:project_englify/pages/level_beginner.dart';
+import 'package:project_englify/widgets/card.dart';
 import 'package:flutter/material.dart';
-import 'package:englify_project/widgets/widget_text.dart';
+import 'package:project_englify/widgets/widget_text.dart';
 
-void main() {
-  runApp(const Home());
-}
+// void main() {
+//   runApp(const Home());
+// }
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+  final String name;
+
+  const Home({
+    super.key,
+    required this.name,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +39,7 @@ class Home extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      textTitle("Belajar bahasa inggris otodidak dari 0",
+                      textTitle("Hai $name, Let's start your study!",
                           TextAlign.left, const Color(0xffffffff)),
                     ],
                   ),

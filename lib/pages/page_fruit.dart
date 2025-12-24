@@ -1,7 +1,7 @@
-import 'package:englify_project/pages/detailpage_fruit.dart';
-import 'package:englify_project/widgets/card.dart';
+import 'package:project_englify/pages/detailpage_fruit.dart';
+import 'package:project_englify/widgets/card.dart';
 import 'package:flutter/material.dart';
-import 'package:englify_project/models/model_table.dart';
+import 'package:project_englify/models/model_table.dart';
 
 class FruitPage extends StatelessWidget {
   const FruitPage({super.key});

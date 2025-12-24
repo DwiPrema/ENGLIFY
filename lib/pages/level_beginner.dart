@@ -1,4 +1,4 @@
-import 'package:englify_project/widgets/widget_text.dart';
+import 'package:project_englify/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
 
 class BeginnerPage extends StatelessWidget {

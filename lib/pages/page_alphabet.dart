@@ -1,5 +1,5 @@
-import 'package:englify_project/widgets/card.dart';
-import 'package:englify_project/widgets/widget_text.dart';
+import 'package:project_englify/widgets/card.dart';
+import 'package:project_englify/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 

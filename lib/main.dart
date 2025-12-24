@@ -1,12 +1,12 @@
-import 'package:englify_project/pages/page_adjective.dart';
-import 'package:englify_project/pages/page_alphabet.dart';
-import 'package:englify_project/pages/page_animal.dart';
-import 'package:englify_project/pages/page_fruit.dart';
-import 'package:englify_project/pages/page_greeting.dart';
-import 'package:englify_project/pages/page_noun.dart';
-import 'package:englify_project/pages/page_number.dart';
-import 'package:englify_project/pages/page_verb.dart';
-import 'package:englify_project/pages/splash_page.dart';
+import 'package:project_englify/pages/page_adjective.dart';
+import 'package:project_englify/pages/page_alphabet.dart';
+import 'package:project_englify/pages/page_animal.dart';
+import 'package:project_englify/pages/page_fruit.dart';
+import 'package:project_englify/pages/page_greeting.dart';
+import 'package:project_englify/pages/page_noun.dart';
+import 'package:project_englify/pages/page_number.dart';
+import 'package:project_englify/pages/page_verb.dart';
+import 'package:project_englify/pages/splash_main.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +31,10 @@ class Englify extends StatelessWidget {
         '/adjectivePage': (context) => const AdjectivePage(),
         '/verbPage': (context) => const VerbPage(),
       },
-      home: const Splash(),
+      home: const Scaffold(
+        backgroundColor: Color(0xffD8EFFF),
+        body: SplashIndicator(),
+      ),
     );
   }
 }

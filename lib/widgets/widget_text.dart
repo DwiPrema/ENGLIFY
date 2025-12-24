@@ -49,3 +49,31 @@ Widget lightText(String text, Color textColor) {
     ),
   );
 }
+
+Widget splashTexth1(String text, TextAlign align) {
+  return Text(
+    text,
+    textAlign: align,
+    style: const TextStyle(
+      fontFamily: "JosefinSans",
+      fontSize: 31,
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
+      decoration: TextDecoration.none,
+    ),
+  );
+}
+
+Widget splashTextp(String text, TextAlign align) {
+  return Text(
+    text,
+    textAlign: align,
+    style: const TextStyle(
+      fontFamily: "Poppins",
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      color: Color(0xff505050),
+      decoration: TextDecoration.none,
+    ),
+  );
+}
