@@ -11,6 +11,7 @@ class TextFieldWidget extends StatefulWidget {
   final VoidCallback? onTap;
   final ValueChanged<String>? onChange;
   final TextEditingController controller;
+  final String? Function(String?)? validator;
 
   const TextFieldWidget({
     super.key,
@@ -22,6 +23,7 @@ class TextFieldWidget extends StatefulWidget {
     this.readOnly = false,
     this.onTap,
     this.onChange,
+    this.validator,
     required this.controller,
   });
 
@@ -32,12 +34,13 @@ class TextFieldWidget extends StatefulWidget {
 class _TextFieldWidgetState extends State<TextFieldWidget> {
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       inputFormatters: widget.inputFormatter,
       readOnly: widget.readOnly,
       keyboardType: widget.typeIn,
       onTap: widget.onTap,
       onChanged: widget.onChange,
+      validator: widget.validator,
       style: const TextStyle(
         fontSize: 16,
         fontFamily: "JosefinSans",
@@ -64,8 +67,8 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
-              borderSide:
-                  BorderSide(color: const Color(0xff505050).withOpacity(0.5))),
+              borderSide: BorderSide(
+                  color: const Color(0xff505050).withValues(alpha: 0.5))),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
               borderSide: const BorderSide(color: Color(0xff014371)))),

@@ -2,10 +2,6 @@ import 'package:project_englify/widgets/card.dart';
 import 'package:flutter/material.dart';
 import 'package:project_englify/models/model_table.dart';
 
-void main() {
-  runApp(const DetailGreetingPage());
-}
-
 class DetailGreetingPage extends StatelessWidget {
   const DetailGreetingPage({super.key});
 
@@ -51,104 +47,100 @@ class DetailGreetingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        body: SafeArea(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Bagian Header
-                cardHeader("Greeting", "Pelajari salam dalam bahasa inggris"),
-                const SizedBox(height: 30),
+    return Scaffold(
+      backgroundColor: const Color(0xffD8EFFF),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Bagian Header
+              cardHeader("Greeting", "Pelajari salam dalam bahasa inggris"),
+              const SizedBox(height: 30),
 
-                // Bagian Tabel
-                ListView.builder(
-                  shrinkWrap: true,
-                  physics:
-                      const NeverScrollableScrollPhysics(), // biar tetap bisa scroll di SingleChildScrollView
-                  itemCount: greetingList.length,
-                  itemBuilder: (context, index) {
-                    final fruit = greetingList[index];
-                    return Container(
-                      margin: const EdgeInsets.only(bottom: 10),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 14),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        border:
-                            Border.all(color: Colors.grey.shade300, width: 1),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.shade100,
-                            offset: const Offset(0, 2),
-                            blurRadius: 3,
+              // Bagian Tabel
+              ListView.builder(
+                shrinkWrap: true,
+                physics:
+                    const NeverScrollableScrollPhysics(), // biar tetap bisa scroll di SingleChildScrollView
+                itemCount: greetingList.length,
+                itemBuilder: (context, index) {
+                  final fruit = greetingList[index];
+                  return Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 14),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.grey.shade300, width: 1),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade100,
+                          offset: const Offset(0, 2),
+                          blurRadius: 3,
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        // 🇮🇩 Kolom Bahasa Indonesia
+                        Expanded(
+                          flex: 1,
+                          child: Text(
+                            fruit.indonesia,
+                            style: const TextStyle(
+                              fontFamily: "JosefinSans",
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                            ),
+                            softWrap:
+                                true, // memungkinkan teks turun ke baris baru
                           ),
-                        ],
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          // 🇮🇩 Kolom Bahasa Indonesia
-                          Expanded(
-                            flex: 1,
-                            child: Text(
-                              fruit.indonesia,
-                              style: const TextStyle(
-                                fontFamily: "JosefinSans",
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
+                        ),
+
+                        const SizedBox(width: 10),
+
+                        Expanded(
+                          flex: 1,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                fruit.english,
+                                style: const TextStyle(
+                                  fontFamily: "JosefinSans",
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black,
+                                ),
+                                softWrap: true,
+                                textAlign: TextAlign.right,
                               ),
-                              softWrap:
-                                  true, // memungkinkan teks turun ke baris baru
-                            ),
-                          ),
-
-                          const SizedBox(width: 10),
-
-                          Expanded(
-                            flex: 1,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Text(
-                                  fruit.english,
-                                  style: const TextStyle(
-                                    fontFamily: "JosefinSans",
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.black,
-                                  ),
-                                  softWrap: true,
-                                  textAlign: TextAlign.right,
+                              const SizedBox(height: 2),
+                              Text(
+                                fruit.pronunciation,
+                                style: const TextStyle(
+                                  fontFamily: "JosefinSans",
+                                  fontSize: 13,
+                                  color: Colors.black87,
                                 ),
-                                const SizedBox(height: 2),
-                                Text(
-                                  fruit.pronunciation,
-                                  style: const TextStyle(
-                                    fontFamily: "JosefinSans",
-                                    fontSize: 13,
-                                    color: Colors.black87,
-                                  ),
-                                  softWrap: true,
-                                  textAlign: TextAlign.right,
-                                ),
-                              ],
-                            ),
+                                softWrap: true,
+                                textAlign: TextAlign.right,
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
-                    );
-                  },
-                )
-              ],
-            ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              )
+            ],
           ),
         ),
       ),

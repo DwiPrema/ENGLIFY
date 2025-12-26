@@ -1,3 +1,11 @@
+import 'package:project_englify/pages/detailpage_adjective.dart';
+import 'package:project_englify/pages/detailpage_animal.dart';
+import 'package:project_englify/pages/detailpage_fruit.dart';
+import 'package:project_englify/pages/detailpage_greeting.dart';
+import 'package:project_englify/pages/detailpage_noun.dart';
+import 'package:project_englify/pages/detailpage_verb.dart';
+import 'package:project_englify/pages/home_revisi.dart';
+import 'package:project_englify/pages/indata_user.dart';
 import 'package:project_englify/pages/page_adjective.dart';
 import 'package:project_englify/pages/page_alphabet.dart';
 import 'package:project_englify/pages/page_animal.dart';
@@ -8,6 +16,7 @@ import 'package:project_englify/pages/page_number.dart';
 import 'package:project_englify/pages/page_verb.dart';
 import 'package:project_englify/pages/splash_main.dart';
 import 'package:flutter/material.dart';
+import 'package:project_englify/routes.dart';
 
 void main() {
   runApp(const Englify());
@@ -22,19 +31,25 @@ class Englify extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/alphabetPage': (context) => const AlphabetPage(),
-        '/numberPage': (context) => const NumberPage(),
-        '/fruitPage': (context) => const FruitPage(),
-        '/animalPage': (context) => const AnimalPage(),
-        '/greetingPage': (context) => const GreetingPage(),
-        '/nounPage': (context) => const NounPage(),
-        '/adjectivePage': (context) => const AdjectivePage(),
-        '/verbPage': (context) => const VerbPage(),
+        AppRoutes.alphabetPageRoute: (context) => const AlphabetPage(),
+        AppRoutes.numberPageRoute: (context) => const NumberPage(),
+        AppRoutes.fruitPageRoute: (context) => const FruitPage(),
+        AppRoutes.detailFruitRoute: (context) => const DetailFruitPage(),
+        AppRoutes.animalPageRoute: (context) => const AnimalPage(),
+        AppRoutes.detailAnimalRoute: (context) => const DetailAnimalPage(),
+        AppRoutes.greetingPageRoute: (context) => const GreetingPage(),
+        AppRoutes.detailGreetingRoute: (context) => const DetailGreetingPage(),
+        AppRoutes.nounPageRoute: (context) => const NounPage(),
+        AppRoutes.detailNounRoute: (context) => const DetailNounPage(),
+        AppRoutes.adjectivePageRoute: (context) => const AdjectivePage(),
+        AppRoutes.detailAdjectiveRoute: (context) =>
+            const DetailAdjectivePage(),
+        AppRoutes.verbPageRoute: (context) => const VerbPage(),
+        AppRoutes.detailVerbRoute: (context) => const DetailVerbPage(),
+        AppRoutes.homeRoute: (context) => const HomeRevisi(),
+        AppRoutes.inDataUserRoute: (context) => const InDataUser(),
       },
-      home: const Scaffold(
-        backgroundColor: Color(0xffD8EFFF),
-        body: SplashIndicator(),
-      ),
+      home: const SplashIndicator(),
     );
   }
 }

@@ -1,10 +1,6 @@
 import 'package:project_englify/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Splash4());
-}
-
 class Splash4 extends StatelessWidget {
   const Splash4({super.key});
 
@@ -15,7 +11,7 @@ class Splash4 extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Image.asset(
-          "assets/images/splash4_ilustration.png",
+          "assets/images/logo_ilustration/splash4_ilustration.webp",
           width: 200,
         ),
         const SizedBox(

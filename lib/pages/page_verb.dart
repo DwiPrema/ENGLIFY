@@ -1,5 +1,5 @@
 import 'package:project_englify/models/model_table.dart';
-import 'package:project_englify/pages/detailpage_verb.dart';
+import 'package:project_englify/routes.dart';
 import 'package:project_englify/widgets/card.dart';
 import 'package:project_englify/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +10,7 @@ class VerbPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffD8EFFF),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
@@ -55,10 +56,7 @@ class VerbPage extends StatelessWidget {
                 ),
                 cardLevel(Icons.arrow_forward, "Lihat Lainnya", TextAlign.left,
                     "Pelajari lebih banyak kata kerja sekarang!", () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const DetailVerbPage()));
+                  Navigator.pushNamed(context, AppRoutes.detailVerbRoute);
                 })
               ],
             ),

@@ -1,4 +1,4 @@
-import 'package:project_englify/pages/detailpage_animal.dart';
+import 'package:project_englify/routes.dart';
 import 'package:project_englify/widgets/card.dart';
 import 'package:flutter/material.dart';
 import 'package:project_englify/models/model_table.dart';
@@ -9,7 +9,7 @@ class AnimalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xffD8EFFF),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -92,10 +92,7 @@ class AnimalPage extends StatelessWidget {
 
                 cardLevel(Icons.arrow_forward, "Lihat Lainnya", TextAlign.left,
                     "Pelajari nama nama hewan yang lainnya!", () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const DetailAnimalPage()));
+                  Navigator.pushNamed(context, AppRoutes.detailAnimalRoute);
                 })
               ],
             ),

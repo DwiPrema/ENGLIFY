@@ -53,7 +53,7 @@ Widget cardLevel(IconData icon, String title, TextAlign align, String paragraph,
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
         colors: [
-          const Color(0xFFB4EC51).withOpacity(0.8),
+          const Color(0xFFB4EC51).withValues(alpha: 0.8),
           const Color(0xff1F4C6B),
         ],
       ),

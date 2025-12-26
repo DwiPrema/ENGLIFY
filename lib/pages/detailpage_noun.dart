@@ -2,10 +2,6 @@ import 'package:project_englify/widgets/card.dart';
 import 'package:flutter/material.dart';
 import 'package:project_englify/models/model_table.dart';
 
-void main() {
-  runApp(const DetailNounPage());
-}
-
 class DetailNounPage extends StatelessWidget {
   const DetailNounPage({super.key});
 
@@ -74,88 +70,84 @@ class DetailNounPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        body: SafeArea(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Bagian Header
-                cardHeader(
-                    "Animal", "Pelajari nama nama hewan dalam bahasa inggris"),
-                const SizedBox(height: 30),
+    return Scaffold(
+      backgroundColor: const Color(0xffD8EFFF),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Bagian Header
+              cardHeader(
+                  "Animal", "Pelajari nama nama hewan dalam bahasa inggris"),
+              const SizedBox(height: 30),
 
-                // Bagian Tabel
-                ListView.builder(
-                  shrinkWrap: true,
-                  physics:
-                      const NeverScrollableScrollPhysics(), // biar tetap bisa scroll di SingleChildScrollView
-                  itemCount: nounList.length,
-                  itemBuilder: (context, index) {
-                    final fruit = nounList[index];
-                    return Container(
-                      margin: const EdgeInsets.only(bottom: 10),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 14),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        border:
-                            Border.all(color: Colors.grey.shade300, width: 1),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.shade100,
-                            offset: const Offset(0, 2),
-                            blurRadius: 3,
+              // Bagian Tabel
+              ListView.builder(
+                shrinkWrap: true,
+                physics:
+                    const NeverScrollableScrollPhysics(), // biar tetap bisa scroll di SingleChildScrollView
+                itemCount: nounList.length,
+                itemBuilder: (context, index) {
+                  final fruit = nounList[index];
+                  return Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 14),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.grey.shade300, width: 1),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade100,
+                          offset: const Offset(0, 2),
+                          blurRadius: 3,
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          fruit.indonesia,
+                          style: const TextStyle(
+                            fontFamily: "JosefinSans",
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
                           ),
-                        ],
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            fruit.indonesia,
-                            style: const TextStyle(
-                              fontFamily: "JosefinSans",
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              fruit.english,
+                              style: const TextStyle(
+                                fontFamily: "JosefinSans",
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.black,
+                              ),
                             ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Text(
-                                fruit.english,
-                                style: const TextStyle(
-                                  fontFamily: "JosefinSans",
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                ),
+                            const SizedBox(height: 2),
+                            Text(
+                              fruit.pronunciation,
+                              style: const TextStyle(
+                                fontFamily: "JosefinSans",
+                                fontSize: 13,
+                                color: Colors.black87,
                               ),
-                              const SizedBox(height: 2),
-                              Text(
-                                fruit.pronunciation,
-                                style: const TextStyle(
-                                  fontFamily: "JosefinSans",
-                                  fontSize: 13,
-                                  color: Colors.black87,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    );
-                  },
-                )
-              ],
-            ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              )
+            ],
           ),
         ),
       ),
