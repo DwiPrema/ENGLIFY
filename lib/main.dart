@@ -4,7 +4,7 @@ import 'package:project_englify/pages/detailpage_fruit.dart';
 import 'package:project_englify/pages/detailpage_greeting.dart';
 import 'package:project_englify/pages/detailpage_noun.dart';
 import 'package:project_englify/pages/detailpage_verb.dart';
-import 'package:project_englify/pages/home_revisi.dart';
+import 'package:project_englify/pages/home.dart';
 import 'package:project_englify/pages/indata_user.dart';
 import 'package:project_englify/pages/page_adjective.dart';
 import 'package:project_englify/pages/page_alphabet.dart';
