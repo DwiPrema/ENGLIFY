@@ -1,22 +1,22 @@
-import 'package:project_englify/pages/detailpage_adjective.dart';
-import 'package:project_englify/pages/detailpage_animal.dart';
-import 'package:project_englify/pages/detailpage_fruit.dart';
-import 'package:project_englify/pages/detailpage_greeting.dart';
-import 'package:project_englify/pages/detailpage_noun.dart';
-import 'package:project_englify/pages/detailpage_verb.dart';
-import 'package:project_englify/pages/home.dart';
-import 'package:project_englify/pages/indata_user.dart';
-import 'package:project_englify/pages/page_adjective.dart';
-import 'package:project_englify/pages/page_alphabet.dart';
-import 'package:project_englify/pages/page_animal.dart';
-import 'package:project_englify/pages/page_fruit.dart';
-import 'package:project_englify/pages/page_greeting.dart';
-import 'package:project_englify/pages/page_noun.dart';
-import 'package:project_englify/pages/page_number.dart';
-import 'package:project_englify/pages/page_verb.dart';
-import 'package:project_englify/pages/splash_main.dart';
+import 'package:project_englify/features/level_beginner/adjective/detailpage_adjective.dart';
+import 'package:project_englify/features/level_beginner/animal/detailpage_animal.dart';
+import 'package:project_englify/features/level_beginner/fruit/detailpage_fruit.dart';
+import 'package:project_englify/features/level_beginner/greeting/detailpage_greeting.dart';
+import 'package:project_englify/features/level_beginner/noun/detailpage_noun.dart';
+import 'package:project_englify/features/level_beginner/verb/detailpage_verb.dart';
+import 'package:project_englify/features/home/home.dart';
+import 'package:project_englify/features/identity_user/indata_user.dart';
+import 'package:project_englify/features/level_beginner/adjective/page_adjective.dart';
+import 'package:project_englify/features/level_beginner/alphabet/page_alphabet.dart';
+import 'package:project_englify/features/level_beginner/animal/page_animal.dart';
+import 'package:project_englify/features/level_beginner/fruit/page_fruit.dart';
+import 'package:project_englify/features/level_beginner/greeting/page_greeting.dart';
+import 'package:project_englify/features/level_beginner/noun/page_noun.dart';
+import 'package:project_englify/features/level_beginner/number/page_number.dart';
+import 'package:project_englify/features/level_beginner/verb/page_verb.dart';
+import 'package:project_englify/features/onboarding/onboarding_main.dart';
 import 'package:flutter/material.dart';
-import 'package:project_englify/routes.dart';
+import 'package:project_englify/core/routes/routes.dart';
 
 void main() {
   runApp(const Englify());
@@ -49,7 +49,7 @@ class Englify extends StatelessWidget {
         AppRoutes.homeRoute: (context) => const HomeRevisi(),
         AppRoutes.inDataUserRoute: (context) => const InDataUser(),
       },
-      home: const SplashIndicator(),
+      home: const MainOnboarding(),
     );
   }
 }

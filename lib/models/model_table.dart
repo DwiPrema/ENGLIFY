@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:project_englify/core/constant/app_colors.dart';
 
 class Fruit {
   final String english;
@@ -30,7 +31,7 @@ class FruitCardModel extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff8BC73F),
+          color: AppColors.primary,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
@@ -103,7 +104,7 @@ class AnimalCardModel extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff8BC73F),
+          color: AppColors.primary,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
@@ -176,7 +177,7 @@ class GreetingCardModel extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff8BC73F),
+          color: AppColors.primary,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
@@ -239,7 +240,7 @@ class NounCardModel extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff8BC73F),
+          color: AppColors.primary,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
@@ -312,7 +313,7 @@ class AdjectiveCardModel extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff8BC73F),
+          color: AppColors.primary,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
@@ -376,7 +377,7 @@ class VerbCardModel extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: const Color(0xff8BC73F),
+          color: AppColors.primary,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
