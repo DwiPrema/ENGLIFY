@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_englify/core/constant/app_colors.dart';
-import 'package:project_englify/features/identity_user/model_identity.dart';
+import 'package:project_englify/features/identity_user/identity_model.dart';
 import 'package:project_englify/features/level_beginner/level_beginner.dart';
 import 'package:project_englify/features/shared/widgets/card.dart';
 
