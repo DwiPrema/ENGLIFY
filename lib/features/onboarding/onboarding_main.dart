@@ -1,5 +1,5 @@
 import 'package:project_englify/core/constant/app_colors.dart';
-import 'package:project_englify/features/identity_user/indata_user.dart';
+import 'package:project_englify/features/identity_user/identity_user.dart';
 import 'package:project_englify/features/onboarding/onboarding_page1.dart';
 import 'package:project_englify/features/onboarding/onboarding_page2.dart';
 import 'package:project_englify/features/onboarding/onboarding_page3.dart';
