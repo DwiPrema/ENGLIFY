@@ -5,7 +5,7 @@ import 'package:project_englify/features/level_beginner/greeting/detailpage_gree
 import 'package:project_englify/features/level_beginner/noun/detailpage_noun.dart';
 import 'package:project_englify/features/level_beginner/verb/detailpage_verb.dart';
 import 'package:project_englify/features/home/home.dart';
-import 'package:project_englify/features/identity_user/indata_user.dart';
+import 'package:project_englify/features/identity_user/identity_user.dart';
 import 'package:project_englify/features/level_beginner/adjective/page_adjective.dart';
 import 'package:project_englify/features/level_beginner/alphabet/page_alphabet.dart';
 import 'package:project_englify/features/level_beginner/animal/page_animal.dart';
