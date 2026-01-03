@@ -4,16 +4,16 @@ import 'package:project_englify/features/identity_user/identity_model.dart';
 import 'package:project_englify/features/level_beginner/level_beginner.dart';
 import 'package:project_englify/features/shared/widgets/card.dart';
 
-class HomeRevisi extends StatefulWidget {
-  const HomeRevisi({
+class Home extends StatefulWidget {
+  const Home({
     super.key,
   });
 
   @override
-  State<HomeRevisi> createState() => _HomeRevisiState();
+  State<Home> createState() => _HomeState();
 }
 
-class _HomeRevisiState extends State<HomeRevisi> {
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context)?.settings.arguments;

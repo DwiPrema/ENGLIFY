@@ -46,7 +46,7 @@ class Englify extends StatelessWidget {
             const DetailAdjectivePage(),
         AppRoutes.verbPageRoute: (context) => const VerbPage(),
         AppRoutes.detailVerbRoute: (context) => const DetailVerbPage(),
-        AppRoutes.homeRoute: (context) => const HomeRevisi(),
+        AppRoutes.homeRoute: (context) => const Home(),
         AppRoutes.inDataUserRoute: (context) => const InDataUser(),
       },
       home: const MainOnboarding(),
