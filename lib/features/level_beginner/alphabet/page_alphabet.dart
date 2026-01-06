@@ -82,7 +82,7 @@ class AlphabetCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       onTap: () async {
         final player = AudioPlayer();
-        await player.play(UrlSource("assets/sounds/alphabet/$fileName.mp3"));
+        await player.play(AssetSource("sounds/alphabet/$fileName.mp3"));
       },
       child: Container(
         decoration: BoxDecoration(

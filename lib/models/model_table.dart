@@ -26,8 +26,8 @@ class FruitCardModel extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       onTap: () async {
         final player = AudioPlayer();
-        await player.play(
-            UrlSource("assets/sounds/fruit/${englishName.toLowerCase()}.mp3"));
+        await player
+            .play(AssetSource("sounds/fruit/${englishName.toLowerCase()}.mp3"));
       },
       child: Container(
         decoration: BoxDecoration(
@@ -100,7 +100,7 @@ class AnimalCardModel extends StatelessWidget {
       onTap: () async {
         final player = AudioPlayer();
         await player.play(
-            UrlSource("assets/sounds/animal/${englishName.toLowerCase()}.mp3"));
+            AssetSource("sounds/animal/${englishName.toLowerCase()}.mp3"));
       },
       child: Container(
         decoration: BoxDecoration(
@@ -172,8 +172,8 @@ class GreetingCardModel extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       onTap: () async {
         final player = AudioPlayer();
-        await player.play(UrlSource(
-            "assets/sounds/greeting/${englishName.toLowerCase()}.mp3"));
+        await player.play(
+            AssetSource("sounds/greeting/${englishName.toLowerCase()}.mp3"));
       },
       child: Container(
         decoration: BoxDecoration(
@@ -235,8 +235,8 @@ class NounCardModel extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       onTap: () async {
         final player = AudioPlayer();
-        await player.play(
-            UrlSource("assets/sounds/noun/${englishName.toLowerCase()}.mp3"));
+        await player
+            .play(AssetSource("sounds/noun/${englishName.toLowerCase()}.mp3"));
       },
       child: Container(
         decoration: BoxDecoration(
@@ -308,8 +308,8 @@ class AdjectiveCardModel extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       onTap: () async {
         final player = AudioPlayer();
-        await player.play(UrlSource(
-            "assets/sounds/adjective/${englishName.toLowerCase()}.mp3"));
+        await player.play(
+            AssetSource("sounds/adjective/${englishName.toLowerCase()}.mp3"));
       },
       child: Container(
         decoration: BoxDecoration(
@@ -347,7 +347,6 @@ class AdjectiveCardModel extends StatelessWidget {
   }
 }
 
-
 class Verb {
   final String english;
   final String indonesia;
@@ -372,8 +371,8 @@ class VerbCardModel extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       onTap: () async {
         final player = AudioPlayer();
-        await player.play(UrlSource(
-            "assets/sounds/verb/${englishName.toLowerCase()}.mp3"));
+        await player
+            .play(AssetSource("sounds/verb/${englishName.toLowerCase()}.mp3"));
       },
       child: Container(
         decoration: BoxDecoration(

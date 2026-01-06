@@ -6,6 +6,7 @@ class AppColors {
   static const mainBg = Color(0xffD8EFFF);
   static const secBg = Color(0xff00171A);
   static const paragraph = Color(0xff505050);
+  static const paragraph2 = Color(0xffA8A8A8);
 
   static const white = Color(0xffffffff);
   static const black = Color(0xff000000);

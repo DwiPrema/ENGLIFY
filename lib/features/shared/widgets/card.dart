@@ -105,7 +105,7 @@ Widget cardNumber(String textH1, String textpEng, String textpInd, Color color,
     child: InkWell(
       onTap: () async {
         final player = AudioPlayer();
-        await player.play(UrlSource(soundPath));
+        await player.play(AssetSource(soundPath));
       },
       child: Container(
           decoration: BoxDecoration(

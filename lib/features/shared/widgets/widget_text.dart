@@ -1,18 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_englify/core/constant/app_colors.dart';
 
-Widget textSub(String text, TextAlign align) {
-  return Text(
-    textAlign: align,
-    text,
-    style: const TextStyle(
-      fontFamily: "Montserrat",
-      fontSize: 24,
-      fontWeight: FontWeight.w800,
-    ),
-  );
-}
-
 Widget littleText(String text, TextAlign align) {
   return Text(
     textAlign: align,

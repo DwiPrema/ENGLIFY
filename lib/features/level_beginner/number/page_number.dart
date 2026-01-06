@@ -76,7 +76,7 @@ class NumberCard extends StatelessWidget {
       onTap: () async {
         final player = AudioPlayer();
         await player.play(
-            UrlSource("assets/sounds/number/${letter.toLowerCase()}.mp3"));
+            AssetSource("sounds/number/${letter.toLowerCase()}.mp3"));
       },
       child: Container(
         decoration: BoxDecoration(

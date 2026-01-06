@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
         children: [
           Icon(
             icon,
-            size: 20,
+            size: 25,
             color:
                 isActive ? AppColors.black : const Color.fromARGB(120, 0, 0, 0),
           ),
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
             style: TextStyle(
               fontFamily: "Poppins",
               fontWeight: FontWeight.w500,
-              fontSize: 8,
+              fontSize: 10,
               color: isActive
                   ? AppColors.black
                   : const Color.fromARGB(120, 0, 0, 0),
@@ -56,8 +56,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: AppColors.secBg,
-        body: Stack(
+      backgroundColor: AppColors.secBg,
+      body: SafeArea(
+        bottom: false,
+        child: Stack(
           children: [
             IndexedStack(
               index: _currentIndex,
@@ -69,7 +71,7 @@ class _HomeState extends State<Home> {
             Positioned(
               left: 32,
               right: 32,
-              bottom: 16,
+              bottom: MediaQuery.of(context).padding.bottom,
               child: Container(
                   height: 60,
                   decoration: BoxDecoration(
@@ -95,8 +97,10 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   )),
-            )
+            ),
           ],
-        ));
+        ),
+      ),
+    );
   }
 }
