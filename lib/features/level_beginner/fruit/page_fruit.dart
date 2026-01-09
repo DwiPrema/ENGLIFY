@@ -45,45 +45,55 @@ class FruitPage extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   childAspectRatio: 1.7,
                   children: const [
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Apple",
                       indonesianName: "Apel",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Banana",
                       indonesianName: "Pisang",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Cherry",
                       indonesianName: "Ceri",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Grape",
                       indonesianName: "Anggur",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Lemon",
                       indonesianName: "Lemon",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Orange",
                       indonesianName: "Jeruk",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Pear",
                       indonesianName: "Pir",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Pineapple",
                       indonesianName: "Nanas",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Strawberry",
                       indonesianName: "Stroberi",
+                      type: "fruit",
                     ),
-                    FruitCardModel(
+                    VocabularyModel(
                       englishName: "Watermelon",
                       indonesianName: "Semangka",
+                      type: "fruit",
                     ),
                   ],
                 ),

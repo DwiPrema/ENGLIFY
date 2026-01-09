@@ -1,56 +1,13 @@
 import 'package:project_englify/core/constant/app_colors.dart';
-import 'package:project_englify/core/routes/routes.dart';
 import 'package:project_englify/features/shared/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
+import 'package:project_englify/features/level_beginner/data/beginner_data_menu.dart';
 
 class BeginnerPage extends StatelessWidget {
   const BeginnerPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // data untuk grid
-    final List<Map<String, dynamic>> items = [
-      {
-        'title': 'Alphabet',
-        'subtitle': '(Abjad)',
-        'route': AppRoutes.alphabetPageRoute
-      },
-      {
-        'title': 'Number',
-        'subtitle': '(Angka)',
-        'route': AppRoutes.numberPageRoute
-      },
-      {
-        'title': 'Fruit',
-        'subtitle': '(Buah)',
-        'route': AppRoutes.fruitPageRoute
-      },
-      {
-        'title': 'Animal',
-        'subtitle': '(Hewan)',
-        'route': AppRoutes.animalPageRoute
-      },
-      {
-        'title': 'Greeting',
-        'subtitle': '(Salam)',
-        'route': AppRoutes.greetingPageRoute
-      },
-      {
-        'title': 'Noun',
-        'subtitle': '(Kata Benda)',
-        'route': AppRoutes.nounPageRoute
-      },
-      {
-        'title': 'Adjective',
-        'subtitle': '(Kata Sifat)',
-        'route': AppRoutes.adjectivePageRoute
-      },
-      {
-        'title': 'Verb',
-        'subtitle': '(Kata Kerja)',
-        'route': AppRoutes.verbPageRoute
-      },
-    ];
 
     return Scaffold(
       backgroundColor: AppColors.mainBg,
@@ -59,7 +16,7 @@ class BeginnerPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // --- CARD LEVEL ---
+
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(16),
@@ -103,10 +60,8 @@ class BeginnerPage extends StatelessWidget {
 
             const SizedBox(height: 25),
 
-            // --- GRID ITEM ---
             LayoutBuilder(
               builder: (context, constraints) {
-                // responsive kolom: hp 2, tablet 3
                 int crossAxisCount = constraints.maxWidth > 600 ? 3 : 2;
 
                 return GridView.builder(
@@ -118,13 +73,13 @@ class BeginnerPage extends StatelessWidget {
                     mainAxisSpacing: 16,
                     childAspectRatio: 1.15, // 155/135
                   ),
-                  itemCount: items.length,
+                  itemCount: beginnerMenuItems.length,
                   itemBuilder: (context, index) {
-                    final item = items[index];
+                    final item = beginnerMenuItems[index];
                     return InkWell(
                       borderRadius: BorderRadius.circular(25),
                       onTap: () {
-                        Navigator.pushNamed(context, item['route']);
+                        Navigator.pushNamed(context, item["route"] as String);
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -147,7 +102,6 @@ class BeginnerPage extends StatelessWidget {
                         ),
                         child: Stack(
                           children: [
-                            // teks di tengah
                             Center(
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
@@ -177,7 +131,6 @@ class BeginnerPage extends StatelessWidget {
                               ),
                             ),
 
-                            // tombol panah kanan bawah
                             Positioned(
                               bottom: 10,
                               right: 10,

@@ -80,6 +80,9 @@ flutter:
     - assets/sounds/noun/
     - assets/sounds/adjective/
 
+  #data
+    - assets/data/
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

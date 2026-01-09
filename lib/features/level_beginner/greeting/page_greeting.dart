@@ -43,45 +43,65 @@ class GreetingPage extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   childAspectRatio: 1.7,
                   children: const [
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "Good morning",
                       indonesianName: "Selamat Pagi",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "Good afternoon",
                       indonesianName: "Selamat Siang",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "Good evening",
                       indonesianName: "Selamat Sore",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "Good night",
                       indonesianName: "Selamat Malam",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "How are you",
                       indonesianName: "Apa Kabar",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "Nice to meet you",
                       indonesianName: "Senang bertemu dengan mu",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "Welcome",
                       indonesianName: "Selamat Datang",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "Good bye",
                       indonesianName: "Selamat tinggal",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "See you later",
                       indonesianName: "Sampai Jumpa",
+                      type: "greeting",
+                      isActive: false,
                     ),
-                    GreetingCardModel(
+                    VocabularyModel(
                       englishName: "See you tommorow",
                       indonesianName: "Sampai jumpa besok",
+                      type: "greeting",
+                      isActive: false,
                     ),
                   ],
                 ),

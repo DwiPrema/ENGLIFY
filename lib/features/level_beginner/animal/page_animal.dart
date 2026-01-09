@@ -44,45 +44,55 @@ class AnimalPage extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   childAspectRatio: 1.7,
                   children: const [
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Cat",
                       indonesianName: "Kucing",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Bird",
                       indonesianName: "Burung",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Chicken",
                       indonesianName: "Ayam",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Dog",
                       indonesianName: "Anjing",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Elephant",
                       indonesianName: "Gajah",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Fish",
                       indonesianName: "Ikan",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Horse",
                       indonesianName: "Kuda",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Lion",
                       indonesianName: "Singa",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Rabbit",
                       indonesianName: "Kelinci",
+                      type: "animal",
                     ),
-                    AnimalCardModel(
+                    VocabularyModel(
                       englishName: "Tiger",
                       indonesianName: "Harimau",
+                      type: "animal",
                     ),
                   ],
                 ),

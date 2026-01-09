@@ -1,9 +1,9 @@
 import 'package:project_englify/core/constant/app_colors.dart';
-import 'package:project_englify/models/model_table.dart';
 import 'package:project_englify/core/routes/routes.dart';
 import 'package:project_englify/features/shared/widgets/card.dart';
 import 'package:project_englify/features/shared/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
+import 'package:project_englify/models/model_table.dart';
 
 class AdjectivePage extends StatelessWidget {
   const AdjectivePage({super.key});
@@ -39,26 +39,66 @@ class AdjectivePage extends StatelessWidget {
                     childAspectRatio: 1.7,
                   ),
                   children: const [
-                    AdjectiveCardModel(
-                        englishName: "Big", indonesianName: "Besar"),
-                    AdjectiveCardModel(
-                        englishName: "Small", indonesianName: "Kecil"),
-                    AdjectiveCardModel(
-                        englishName: "Long", indonesianName: "Panjang"),
-                    AdjectiveCardModel(
-                        englishName: "Short", indonesianName: "Pendek"),
-                    AdjectiveCardModel(
-                        englishName: "Tall", indonesianName: "Tinggi"),
-                    AdjectiveCardModel(
-                        englishName: "Bad", indonesianName: "Buruk"),
-                    AdjectiveCardModel(
-                        englishName: "Beautifull", indonesianName: "Cantik"),
-                    AdjectiveCardModel(
-                        englishName: "Handsome", indonesianName: "Ganteng"),
-                    AdjectiveCardModel(
-                        englishName: "Ugly", indonesianName: "Jelek"),
-                    AdjectiveCardModel(
-                        englishName: "Crazy", indonesianName: "Gila"),
+                    VocabularyModel(
+                      englishName: "Big",
+                      indonesianName: "Besar",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Small",
+                      indonesianName: "Kecil",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Long",
+                      indonesianName: "Panjang",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Short",
+                      indonesianName: "Pendek",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Tall",
+                      indonesianName: "Tinggi",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Bad",
+                      indonesianName: "Buruk",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Beautifull",
+                      indonesianName: "Cantik",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Handsome",
+                      indonesianName: "Ganteng",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Ugly",
+                      indonesianName: "Jelek",
+                      type: "adjective",
+                      isActive: false,
+                    ),
+                    VocabularyModel(
+                      englishName: "Crazy",
+                      indonesianName: "Gila",
+                      type: "adjective",
+                      isActive: false,
+                    ),
                   ],
                 ),
                 const SizedBox(

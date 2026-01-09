@@ -17,12 +17,10 @@ class NounPage extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                // 🔷 Bagian Header Biru
                 cardHeader("Noun", "Pelajari kata benda dalam bahasa inggris"),
 
                 const SizedBox(height: 40),
 
-                // 🟩 Judul “Pelajari”
                 const Text(
                   "Pelajari",
                   style: TextStyle(
@@ -43,46 +41,54 @@ class NounPage extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   childAspectRatio: 1.7,
                   children: const [
-                    NounCardModel(
+                    VocabularyModel(
                       englishName: "Table",
                       indonesianName: "Meja",
+                      type: "noun"
                     ),
-                    NounCardModel(
+                    VocabularyModel(
                       englishName: "Chair",
                       indonesianName: "Kursi",
+                      type: "noun"
                     ),
-                    NounCardModel(
+                    VocabularyModel(
                       englishName: "Door",
                       indonesianName: "Pintu",
+                      type: "noun"
                     ),
-                    NounCardModel(
+                    VocabularyModel(
                       englishName: "Fan",
                       indonesianName: "Kipas Angin",
+                      type: "noun"
                     ),
-                    NounCardModel(
+                    VocabularyModel(
                       englishName: "Floor",
                       indonesianName: "Lantai",
+                      type: "noun"
                     ),
-                    NounCardModel(
+                    VocabularyModel(
                       englishName: "Lamp",
                       indonesianName: "Lampu",
+                      type: "noun"
                     ),
-                    NounCardModel(
+                    VocabularyModel(
                       englishName: "Roof",
                       indonesianName: "Atap",
+                      type: "noun"
                     ),
-                    NounCardModel(
+                    VocabularyModel(
                       englishName: "Television",
                       indonesianName: "Televisi",
+                      type: "noun"
                     ),
-                    NounCardModel(
-                      englishName: "Wall",
-                      indonesianName: "Tembok",
-                    ),
-                    NounCardModel(
-                      englishName: "Window",
-                      indonesianName: "Jendela",
-                    ),
+                    VocabularyModel(
+                        englishName: "Window",
+                        indonesianName: "Jendela",
+                        type: "noun"),
+                    VocabularyModel(
+                        englishName: "Wall",
+                        indonesianName: "Tembok",
+                        type: "noun")
                   ],
                 ),
 
