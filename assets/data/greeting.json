@@ -1,0 +1,188 @@
+[
+    {
+        "type": "greeting",
+        "indonesia": "Halo",
+        "english": "Hello",
+        "pronunciation": "he-lo"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Hai",
+        "english": "Hi",
+        "pronunciation": "hai"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat pagi",
+        "english": "Good morning",
+        "pronunciation": "gud mor-ning"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat siang",
+        "english": "Good afternoon",
+        "pronunciation": "gud af-ter-nun"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat sore",
+        "english": "Good evening",
+        "pronunciation": "gud iv-ning"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat malam",
+        "english": "Good night",
+        "pronunciation": "gud nait"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Apa kabar?",
+        "english": "How are you?",
+        "pronunciation": "hau ar yu"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Senang bertemu denganmu",
+        "english": "Nice to meet you",
+        "pronunciation": "nais tu mit yu"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Senang bertemu lagi",
+        "english": "Nice to see you again",
+        "pronunciation": "nais tu si yu a-gen"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Lama tak jumpa",
+        "english": "Long time no see",
+        "pronunciation": "long taim no si"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat datang",
+        "english": "Welcome",
+        "pronunciation": "wel-kam"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat tinggal",
+        "english": "Goodbye",
+        "pronunciation": "gud-bai"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Sampai jumpa",
+        "english": "See you later",
+        "pronunciation": "si yu le-ter"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Sampai besok",
+        "english": "See you tomorrow",
+        "pronunciation": "si yu to-mo-row"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Sampai minggu depan",
+        "english": "See you next week",
+        "pronunciation": "si yu nekst wik"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Hati-hati di jalan",
+        "english": "Take care",
+        "pronunciation": "teik ker"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat datang kembali",
+        "english": "Welcome back",
+        "pronunciation": "wel-kam bek"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat bersenang-senang",
+        "english": "Have fun",
+        "pronunciation": "hev fan"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat berlibur",
+        "english": "Have a nice holiday",
+        "pronunciation": "hev e nais ho-li-dei"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat beristirahat",
+        "english": "Have a rest",
+        "pronunciation": "hev e rest"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Semoga harimu menyenangkan",
+        "english": "Have a nice day",
+        "pronunciation": "hev e nais dei"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Senang berbicara denganmu",
+        "english": "Nice talking to you",
+        "pronunciation": "nais tol-king tu yu"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Apa kabar pagi ini?",
+        "english": "How are you this morning?",
+        "pronunciation": "hau ar yu dis mor-ning"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Bagaimana harimu?",
+        "english": "How’s your day?",
+        "pronunciation": "haus yor dei"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Apa yang kamu lakukan?",
+        "english": "What are you doing?",
+        "pronunciation": "wot ar yu du-ing"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Senang melihatmu!",
+        "english": "Glad to see you!",
+        "pronunciation": "gled tu si yu"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat ulang tahun!",
+        "english": "Happy birthday!",
+        "pronunciation": "he-pi bert-dei"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat!",
+        "english": "Congratulations!",
+        "pronunciation": "kong-gre-tyu-lei-shen"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat tahun baru!",
+        "english": "Happy New Year!",
+        "pronunciation": "he-pi nyu yir"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat Natal!",
+        "english": "Merry Christmas!",
+        "pronunciation": "me-ri kris-mes"
+    },
+    {
+        "type": "greeting",
+        "indonesia": "Selamat Paskah!",
+        "english": "Happy Easter!",
+        "pronunciation": "he-pi is-ter"
+    }
+]

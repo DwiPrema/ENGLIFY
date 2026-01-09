@@ -1,0 +1,488 @@
+[
+    {
+        "type": "verb",
+        "indonesia": "Pergi",
+        "english": "Go",
+        "pronunciation": "ɡəʊ → gou"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Datang",
+        "english": "Come",
+        "pronunciation": "kʌm → kam"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Melihat",
+        "english": "See",
+        "pronunciation": "siː → si"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mendengar",
+        "english": "Hear",
+        "pronunciation": "hɪə → hir"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Berbicara",
+        "english": "Speak",
+        "pronunciation": "spiːk → spik"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Makan",
+        "english": "Eat",
+        "pronunciation": "iːt → it"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Minum",
+        "english": "Drink",
+        "pronunciation": "drɪŋk → dringk"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Tidur",
+        "english": "Sleep",
+        "pronunciation": "sliːp → slip"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Bangun",
+        "english": "Wake up",
+        "pronunciation": "weɪk ʌp → weik ap"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Berlari",
+        "english": "Run",
+        "pronunciation": "rʌn → ran"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Berjalan",
+        "english": "Walk",
+        "pronunciation": "wɔːk → wok"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Bekerja",
+        "english": "Work",
+        "pronunciation": "wɜːk → werk"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Belajar",
+        "english": "Study",
+        "pronunciation": "ˈstʌd.i → sta-di"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mengajar",
+        "english": "Teach",
+        "pronunciation": "tiːtʃ → tiic"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menulis",
+        "english": "Write",
+        "pronunciation": "raɪt → rait"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membaca",
+        "english": "Read",
+        "pronunciation": "riːd → rid"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mendengarkan",
+        "english": "Listen",
+        "pronunciation": "ˈlɪs.ən → li-sen"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Bermain",
+        "english": "Play",
+        "pronunciation": "pleɪ → plei"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Berenang",
+        "english": "Swim",
+        "pronunciation": "swɪm → swim"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Memandikan",
+        "english": "Bathe",
+        "pronunciation": "beɪð → beid"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membuka",
+        "english": "Open",
+        "pronunciation": "ˈəʊ.pən → ou-pen"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menutup",
+        "english": "Close",
+        "pronunciation": "kləʊz → klouz"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membeli",
+        "english": "Buy",
+        "pronunciation": "baɪ → bai"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menjual",
+        "english": "Sell",
+        "pronunciation": "sel → sel"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membawa",
+        "english": "Bring",
+        "pronunciation": "brɪŋ → bring"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membuat",
+        "english": "Make",
+        "pronunciation": "meɪk → meik"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mengambil",
+        "english": "Take",
+        "pronunciation": "teɪk → teik"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Memberi",
+        "english": "Give",
+        "pronunciation": "ɡɪv → giv"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mendapatkan",
+        "english": "Get",
+        "pronunciation": "ɡet → get"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Memegang",
+        "english": "Hold",
+        "pronunciation": "həʊld → hold"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menemukan",
+        "english": "Find",
+        "pronunciation": "faɪnd → faind"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menunjukkan",
+        "english": "Show",
+        "pronunciation": "ʃəʊ → show"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Memasak",
+        "english": "Cook",
+        "pronunciation": "kʊk → kuk"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membersihkan",
+        "english": "Clean",
+        "pronunciation": "kliːn → klin"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mencuci",
+        "english": "Wash",
+        "pronunciation": "wɒʃ → wosh"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mendaki",
+        "english": "Climb",
+        "pronunciation": "klaɪm → klaim"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Duduk",
+        "english": "Sit",
+        "pronunciation": "sɪt → sit"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Berdiri",
+        "english": "Stand",
+        "pronunciation": "stænd → stend"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Tersenyum",
+        "english": "Smile",
+        "pronunciation": "smaɪl → smail"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Tertawa",
+        "english": "Laugh",
+        "pronunciation": "lɑːf → laf"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menangis",
+        "english": "Cry",
+        "pronunciation": "kraɪ → krai"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menunggu",
+        "english": "Wait",
+        "pronunciation": "weɪt → weit"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Melihat",
+        "english": "Look",
+        "pronunciation": "lʊk → luk"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menyentuh",
+        "english": "Touch",
+        "pronunciation": "tʌtʃ → tac"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mencium",
+        "english": "Smell",
+        "pronunciation": "smel → smel"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Merasa",
+        "english": "Feel",
+        "pronunciation": "fiːl → fil"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Berpikir",
+        "english": "Think",
+        "pronunciation": "θɪŋk → thingk"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Tahu",
+        "english": "Know",
+        "pronunciation": "nəʊ → nou"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mengerti",
+        "english": "Understand",
+        "pronunciation": "ˌʌn.dəˈstænd → an-der-stend"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mengingat",
+        "english": "Remember",
+        "pronunciation": "rɪˈmem.bər → ri-mem-ber"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Melupakan",
+        "english": "Forget",
+        "pronunciation": "fəˈɡet → for-get"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membantu",
+        "english": "Help",
+        "pronunciation": "help → help"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menyukai",
+        "english": "Like",
+        "pronunciation": "laɪk → laik"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membenci",
+        "english": "Hate",
+        "pronunciation": "heɪt → heit"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mencintai",
+        "english": "Love",
+        "pronunciation": "lʌv → lav"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menari",
+        "english": "Dance",
+        "pronunciation": "dɑːns → dens"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Bernyanyi",
+        "english": "Sing",
+        "pronunciation": "sɪŋ → sing"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Bermain Musik",
+        "english": "Play music",
+        "pronunciation": "pleɪ ˈmjuː.zɪk → plei myu-zik"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menonton",
+        "english": "Watch",
+        "pronunciation": "wɒtʃ → woc"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Bersantai",
+        "english": "Relax",
+        "pronunciation": "rɪˈlæks → ri-leks"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Beristirahat",
+        "english": "Rest",
+        "pronunciation": "rest → rest"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mengemudi",
+        "english": "Drive",
+        "pronunciation": "draɪv → draiv"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Terbang",
+        "english": "Fly",
+        "pronunciation": "flaɪ → flai"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Melompat",
+        "english": "Jump",
+        "pronunciation": "dʒʌmp → jamp"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menjawab",
+        "english": "Answer",
+        "pronunciation": "ˈɑːn.sər → an-ser"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Bertanya",
+        "english": "Ask",
+        "pronunciation": "ɑːsk → ask"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menjelaskan",
+        "english": "Explain",
+        "pronunciation": "ɪkˈspleɪn → eks-plein"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Memilih",
+        "english": "Choose",
+        "pronunciation": "tʃuːz → cus"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menggunakan",
+        "english": "Use",
+        "pronunciation": "juːz → yuz"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Membawa",
+        "english": "Carry",
+        "pronunciation": "ˈkær.i → ke-ri"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Memotong",
+        "english": "Cut",
+        "pronunciation": "kʌt → kat"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Memukul",
+        "english": "Hit",
+        "pronunciation": "hɪt → hit"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mendorong",
+        "english": "Push",
+        "pronunciation": "pʊʃ → push"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menarik",
+        "english": "Pull",
+        "pronunciation": "pʊl → pul"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menangkap",
+        "english": "Catch",
+        "pronunciation": "kætʃ → kec"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Melempar",
+        "english": "Throw",
+        "pronunciation": "θrəʊ → thro"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menendang",
+        "english": "Kick",
+        "pronunciation": "kɪk → kik"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Menikah",
+        "english": "Marry",
+        "pronunciation": "ˈmær.i → me-ri"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Bercerai",
+        "english": "Divorce",
+        "pronunciation": "dɪˈvɔːs → di-vors"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Lahir",
+        "english": "Born",
+        "pronunciation": "bɔːn → born"
+    },
+    {
+        "type": "verb",
+        "indonesia": "Mati",
+        "english": "Die",
+        "pronunciation": "daɪ → dai"
+    }
+]

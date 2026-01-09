@@ -1,0 +1,278 @@
+[
+    {
+        "type": "animal",
+        "indonesia": "Kucing",
+        "english": "Cat",
+        "pronunciation": "kæt → kucing"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Anjing",
+        "english": "Dog",
+        "pronunciation": "dɒɡ → anjing"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Burung",
+        "english": "Bird",
+        "pronunciation": "bɜːd → burung"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Ikan",
+        "english": "Fish",
+        "pronunciation": "fɪʃ → ikan"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Gajah",
+        "english": "Elephant",
+        "pronunciation": "ˈel.ɪ.fənt → gajah"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Harimau",
+        "english": "Tiger",
+        "pronunciation": "ˈtaɪ.ɡər → harimau"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Singa",
+        "english": "Lion",
+        "pronunciation": "ˈlaɪ.ən → singa"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kelinci",
+        "english": "Rabbit",
+        "pronunciation": "ˈræb.ɪt → kelinci"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kuda",
+        "english": "Horse",
+        "pronunciation": "hɔːs → kuda"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Ayam",
+        "english": "Chicken",
+        "pronunciation": "ˈtʃɪk.ɪn → ayam"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Sapi",
+        "english": "Cow",
+        "pronunciation": "kaʊ → sapi"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Bebek",
+        "english": "Duck",
+        "pronunciation": "dʌk → bebek"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kambing",
+        "english": "Goat",
+        "pronunciation": "ɡəʊt → kambing"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Ular",
+        "english": "Snake",
+        "pronunciation": "sneɪk → ular"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kura-kura",
+        "english": "Turtle",
+        "pronunciation": "ˈtɜː.təl → kura-kura"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Katak",
+        "english": "Frog",
+        "pronunciation": "frɒɡ → katak"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kupu-kupu",
+        "english": "Butterfly",
+        "pronunciation": "ˈbʌt.ə.flaɪ → kupu-kupu"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Laba-laba",
+        "english": "Spider",
+        "pronunciation": "ˈspaɪ.dər → laba-laba"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Lebah",
+        "english": "Bee",
+        "pronunciation": "biː → lebah"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Panda",
+        "english": "Panda",
+        "pronunciation": "ˈpæn.də → panda"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Beruang",
+        "english": "Bear",
+        "pronunciation": "beər → beruang"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kangguru",
+        "english": "Kangaroo",
+        "pronunciation": "ˌkæŋ.ɡəˈruː → kangguru"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Zebra",
+        "english": "Zebra",
+        "pronunciation": "ˈziː.brə → zebra"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Rusa",
+        "english": "Deer",
+        "pronunciation": "dɪər → rusa"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Serigala",
+        "english": "Wolf",
+        "pronunciation": "wʊlf → serigala"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kucing besar",
+        "english": "Leopard",
+        "pronunciation": "ˈlep.əd → macan tutul"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kera",
+        "english": "Monkey",
+        "pronunciation": "ˈmʌŋ.ki → monyet"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Gorila",
+        "english": "Gorilla",
+        "pronunciation": "ɡəˈrɪl.ə → gorila"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Koala",
+        "english": "Koala",
+        "pronunciation": "kəʊˈɑː.lə → koala"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Buaya",
+        "english": "Crocodile",
+        "pronunciation": "ˈkrɒk.ə.daɪl → buaya"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Elang",
+        "english": "Eagle",
+        "pronunciation": "ˈiː.ɡəl → elang"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Burung hantu",
+        "english": "Owl",
+        "pronunciation": "aʊl → burung hantu"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Merpati",
+        "english": "Pigeon",
+        "pronunciation": "ˈpɪdʒ.ən → merpati"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Burung beo",
+        "english": "Parrot",
+        "pronunciation": "ˈpær.ət → burung beo"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Lumba-lumba",
+        "english": "Dolphin",
+        "pronunciation": "ˈdɒl.fɪn → lumba-lumba"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Paus",
+        "english": "Whale",
+        "pronunciation": "weɪl → paus"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Hiu",
+        "english": "Shark",
+        "pronunciation": "ʃɑːk → hiu"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kepiting",
+        "english": "Crab",
+        "pronunciation": "kræb → kepiting"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Udang",
+        "english": "Shrimp",
+        "pronunciation": "ʃrɪmp → udang"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Bintang laut",
+        "english": "Starfish",
+        "pronunciation": "ˈstɑː.fɪʃ → bintang laut"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Kuda laut",
+        "english": "Seahorse",
+        "pronunciation": "ˈsiː.hɔːs → kuda laut"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Penguin",
+        "english": "Penguin",
+        "pronunciation": "ˈpeŋ.ɡwɪn → penguin"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Beruang kutub",
+        "english": "Polar bear",
+        "pronunciation": "ˈpəʊ.lə beər → beruang kutub"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Rubah",
+        "english": "Fox",
+        "pronunciation": "fɒks → rubah"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Landak",
+        "english": "Hedgehog",
+        "pronunciation": "ˈhedʒ.hɒɡ → landak"
+    },
+    {
+        "type": "animal",
+        "indonesia": "Tikus",
+        "english": "Mouse",
+        "pronunciation": "maʊs → tikus"
+    }
+]

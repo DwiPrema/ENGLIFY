@@ -1,0 +1,518 @@
+[
+    {
+        "type": "adjective",
+        "indonesia": "Besar",
+        "english": "Big",
+        "pronunciation": "bɪɡ → big"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kecil",
+        "english": "Small",
+        "pronunciation": "smɔːl → smol"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Panjang",
+        "english": "Long",
+        "pronunciation": "lɒŋ → long"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Pendek",
+        "english": "Short",
+        "pronunciation": "ʃɔːt → short"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Tinggi",
+        "english": "Tall",
+        "pronunciation": "tɔːl → tol"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Gemuk",
+        "english": "Fat",
+        "pronunciation": "fæt → fet"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kurus",
+        "english": "Thin",
+        "pronunciation": "θɪn → thin"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Tua",
+        "english": "Old",
+        "pronunciation": "əʊld → old"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Muda",
+        "english": "Young",
+        "pronunciation": "jʌŋ → yang"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Baru",
+        "english": "New",
+        "pronunciation": "njuː → nyu"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Baik",
+        "english": "Good",
+        "pronunciation": "ɡʊd → gud"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Buruk",
+        "english": "Bad",
+        "pronunciation": "bæd → bed"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Cantik",
+        "english": "Beautiful",
+        "pronunciation": "ˈbjuː.tɪ.fəl → byu-ti-ful"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Jelek",
+        "english": "Ugly",
+        "pronunciation": "ˈʌɡ.li → ag-li"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Bahagia",
+        "english": "Happy",
+        "pronunciation": "ˈhæp.i → he-pi"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Sedih",
+        "english": "Sad",
+        "pronunciation": "sæd → sed"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Marah",
+        "english": "Angry",
+        "pronunciation": "ˈæŋ.ɡri → eng-gri"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Lelah",
+        "english": "Tired",
+        "pronunciation": "ˈtaɪəd → tay-erd"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Malas",
+        "english": "Lazy",
+        "pronunciation": "ˈleɪ.zi → lei-zi"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Pintar",
+        "english": "Clever",
+        "pronunciation": "ˈklev.ər → kle-ver"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Baik Hati",
+        "english": "Kind",
+        "pronunciation": "kaɪnd → kaind"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kasar",
+        "english": "Rude",
+        "pronunciation": "ruːd → rud"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kaya",
+        "english": "Rich",
+        "pronunciation": "rɪtʃ → ric"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Miskin",
+        "english": "Poor",
+        "pronunciation": "pʊər → pur"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Bersih",
+        "english": "Clean",
+        "pronunciation": "kliːn → klin"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kotor",
+        "english": "Dirty",
+        "pronunciation": "ˈdɜː.ti → der-ti"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Panas",
+        "english": "Hot",
+        "pronunciation": "hɒt → hot"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Dingin",
+        "english": "Cold",
+        "pronunciation": "kəʊld → kold"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Basah",
+        "english": "Wet",
+        "pronunciation": "wet → wet"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kering",
+        "english": "Dry",
+        "pronunciation": "draɪ → drai"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Berisik",
+        "english": "Noisy",
+        "pronunciation": "ˈnɔɪ.zi → noi-zi"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Tenang",
+        "english": "Quiet",
+        "pronunciation": "ˈkwaɪ.ət → kwai-et"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Lambat",
+        "english": "Slow",
+        "pronunciation": "sləʊ → slo"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Cepat",
+        "english": "Fast",
+        "pronunciation": "fɑːst → fast"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Mudah",
+        "english": "Easy",
+        "pronunciation": "ˈiː.zi → i-zi"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Sulit",
+        "english": "Difficult",
+        "pronunciation": "ˈdɪf.ɪ.kəlt → di-fi-kalt"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Mahal",
+        "english": "Expensive",
+        "pronunciation": "ɪkˈspen.sɪv → eks-pen-siv"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Murah",
+        "english": "Cheap",
+        "pronunciation": "tʃiːp → cip"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Penuh",
+        "english": "Full",
+        "pronunciation": "fʊl → ful"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kosong",
+        "english": "Empty",
+        "pronunciation": "ˈemp.ti → emp-ti"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Gelap",
+        "english": "Dark",
+        "pronunciation": "dɑːk → dark"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Terang",
+        "english": "Bright",
+        "pronunciation": "braɪt → brait"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Lezat",
+        "english": "Delicious",
+        "pronunciation": "dɪˈlɪʃ.əs → di-li-syos"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Pahit",
+        "english": "Bitter",
+        "pronunciation": "ˈbɪt.ər → bi-ter"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Asin",
+        "english": "Salty",
+        "pronunciation": "ˈsɔːl.ti → sol-ti"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Manis",
+        "english": "Sweet",
+        "pronunciation": "swiːt → swit"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Asam",
+        "english": "Sour",
+        "pronunciation": "saʊər → saur"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kuat",
+        "english": "Strong",
+        "pronunciation": "strɒŋ → strong"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Lemah",
+        "english": "Weak",
+        "pronunciation": "wiːk → wik"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Lembut",
+        "english": "Soft",
+        "pronunciation": "sɒft → soft"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Keras",
+        "english": "Hard",
+        "pronunciation": "hɑːd → hard"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Dalam",
+        "english": "Deep",
+        "pronunciation": "diːp → dip"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Dangkal",
+        "english": "Shallow",
+        "pronunciation": "ˈʃæl.əʊ → sha-lou"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Tebal",
+        "english": "Thick",
+        "pronunciation": "θɪk → thik"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Tipis",
+        "english": "Thin",
+        "pronunciation": "θɪn → thin"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Awal",
+        "english": "Early",
+        "pronunciation": "ˈɜː.li → er-li"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Terlambat",
+        "english": "Late",
+        "pronunciation": "leɪt → leit"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Sibuk",
+        "english": "Busy",
+        "pronunciation": "ˈbɪz.i → bi-zi"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Bebas",
+        "english": "Free",
+        "pronunciation": "friː → fri"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Lucu",
+        "english": "Funny",
+        "pronunciation": "ˈfʌn.i → fa-ni"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Serius",
+        "english": "Serious",
+        "pronunciation": "ˈsɪə.ri.əs → si-ri-es"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Ramah",
+        "english": "Friendly",
+        "pronunciation": "ˈfrend.li → frend-li"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Sopan",
+        "english": "Polite",
+        "pronunciation": "pəˈlaɪt → po-lait"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Jujur",
+        "english": "Honest",
+        "pronunciation": "ˈɒn.ɪst → o-nest"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Berani",
+        "english": "Brave",
+        "pronunciation": "breɪv → breiv"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Pemalu",
+        "english": "Shy",
+        "pronunciation": "ʃaɪ → shai"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Dermawan",
+        "english": "Generous",
+        "pronunciation": "ˈdʒen.ər.əs → je-ne-ros"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Serakah",
+        "english": "Greedy",
+        "pronunciation": "ˈɡriː.di → gri-di"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Penasaran",
+        "english": "Curious",
+        "pronunciation": "ˈkjʊə.ri.əs → kyur-ios"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Suka Menolong",
+        "english": "Helpful",
+        "pronunciation": "ˈhelp.fəl → help-ful"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Hati-hati",
+        "english": "Careful",
+        "pronunciation": "ˈkeə.fəl → ker-ful"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Ceroboh",
+        "english": "Careless",
+        "pronunciation": "ˈkeə.ləs → ker-les"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Tenang",
+        "english": "Calm",
+        "pronunciation": "kɑːm → kam"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Gugup",
+        "english": "Nervous",
+        "pronunciation": "ˈnɜː.vəs → ner-ves"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Membosankan",
+        "english": "Boring",
+        "pronunciation": "ˈbɔː.rɪŋ → bo-ring"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Menyenangkan",
+        "english": "Exciting",
+        "pronunciation": "ɪkˈsaɪ.tɪŋ → ek-sai-ting"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Nyaman",
+        "english": "Comfortable",
+        "pronunciation": "ˈkʌm.fə.tə.bəl → kom-for-ta-bel"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Menarik",
+        "english": "Interesting",
+        "pronunciation": "ˈɪn.trəs.tɪŋ → in-tres-ting"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Populer",
+        "english": "Popular",
+        "pronunciation": "ˈpɒp.jə.lər → pop-yu-ler"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Kuat (berpengaruh)",
+        "english": "Powerful",
+        "pronunciation": "ˈpaʊə.fəl → pau-er-ful"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Beruntung",
+        "english": "Lucky",
+        "pronunciation": "ˈlʌk.i → la-ki"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Sial",
+        "english": "Unlucky",
+        "pronunciation": "ʌnˈlʌk.i → an-la-ki"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Sehat",
+        "english": "Healthy",
+        "pronunciation": "ˈhel.θi → hel-thi"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Sakit",
+        "english": "Sick",
+        "pronunciation": "sɪk → sik"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Sempit",
+        "english": "Narrow",
+        "pronunciation": "ˈnær.əʊ → ne-ro"
+    },
+    {
+        "type": "adjective",
+        "indonesia": "Lebar",
+        "english": "Wide",
+        "pronunciation": "waɪd → waid"
+    }
+]

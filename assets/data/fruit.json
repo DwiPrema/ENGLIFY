@@ -1,0 +1,242 @@
+[
+  {
+    "indonesia": "Apel",
+    "english": "Apple",
+    "pronunciation": "ˈæp.əl → apel",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Pisang",
+    "english": "Banana",
+    "pronunciation": "bəˈnæn.ə → be-na-na",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Jeruk",
+    "english": "Orange",
+    "pronunciation": "ˈɒr.ɪndʒ → or-ens",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Mangga",
+    "english": "Mango",
+    "pronunciation": "ˈmæŋ.ɡoʊ → meng-gou",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Anggur",
+    "english": "Grapes",
+    "pronunciation": "ɡreɪps → greips",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Semangka",
+    "english": "Watermelon",
+    "pronunciation": "ˈwɔː.təˌmel.ən → woter-melon",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Pepaya",
+    "english": "Papaya",
+    "pronunciation": "pəˈpaɪ.ə → pa-paya",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Nanas",
+    "english": "Pineapple",
+    "pronunciation": "ˈpaɪnˌæp.əl → pain-apel",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Melon",
+    "english": "Melon",
+    "pronunciation": "ˈmel.ən → melon",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Strawberi",
+    "english": "Strawberry",
+    "pronunciation": "ˈstrɔːˌber.i → stro-beri",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Kiwi",
+    "english": "Kiwi",
+    "pronunciation": "ˈkiː.wiː → ki-wi",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Pir",
+    "english": "Pear",
+    "pronunciation": "peər → per",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Jambu",
+    "english": "Guava",
+    "pronunciation": "ˈɡwɑː.və → gua-va",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Lemon",
+    "english": "Lemon",
+    "pronunciation": "ˈlem.ən → le-mon",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Lime",
+    "english": "Lime",
+    "pronunciation": "laɪm → laim",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Kelapa",
+    "english": "Coconut",
+    "pronunciation": "ˈkəʊ.kə.nʌt → kou-ko-nat",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Durian",
+    "english": "Durian",
+    "pronunciation": "ˈdʊə.ri.ən → du-ri-en",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Salak",
+    "english": "Snake Fruit",
+    "pronunciation": "sneɪk fruːt → snek frut",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Sirsak",
+    "english": "Soursop",
+    "pronunciation": "ˈsaʊə.sɒp → saur-sop",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Delima",
+    "english": "Pomegranate",
+    "pronunciation": "ˈpɒm.ɪˌɡræn.ɪt → pomi-granit",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Blueberi",
+    "english": "Blueberry",
+    "pronunciation": "ˈbluːˌber.i → blu-beri",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Raspberry",
+    "english": "Raspberry",
+    "pronunciation": "ˈræzˌber.i → raz-beri",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Blackberry",
+    "english": "Blackberry",
+    "pronunciation": "ˈblækˌber.i → blek-beri",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Ceri",
+    "english": "Cherry",
+    "pronunciation": "ˈtʃer.i → ce-ri",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Plum",
+    "english": "Plum",
+    "pronunciation": "plʌm → plem",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Aprikot",
+    "english": "Apricot",
+    "pronunciation": "ˈeɪ.prɪ.kɒt → ei-pri-kot",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Persik",
+    "english": "Peach",
+    "pronunciation": "piːtʃ → pic",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Kurma",
+    "english": "Date",
+    "pronunciation": "deɪt → deit",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Tin",
+    "english": "Fig",
+    "pronunciation": "fɪɡ → fig",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Alpukat",
+    "english": "Avocado",
+    "pronunciation": "ˌæv.əˈkɑː.dəʊ → avo-kado",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Markisa",
+    "english": "Passion Fruit",
+    "pronunciation": "ˈpæʃ.ən fruːt → peshon-frut",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Buah Naga",
+    "english": "Dragon Fruit",
+    "pronunciation": "ˈdræɡ.ən fruːt → dregon-frut",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Belimbing",
+    "english": "Starfruit",
+    "pronunciation": "ˈstɑː.fruːt → star-frut",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Cempedak",
+    "english": "Jackfruit",
+    "pronunciation": "ˈdʒæk.fruːt → jek-frut",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Sukun",
+    "english": "Breadfruit",
+    "pronunciation": "ˈbred.fruːt → bred-frut",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Manggis",
+    "english": "Mangosteen",
+    "pronunciation": "ˈmæŋ.ɡəˌstiːn → meng-gostin",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Kelengkeng",
+    "english": "Longan",
+    "pronunciation": "ˈlɒŋ.ən → long-en",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Leci",
+    "english": "Lychee",
+    "pronunciation": "ˈlaɪ.tʃiː → lai-ci",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Zaitun",
+    "english": "Olive",
+    "pronunciation": "ˈɒl.ɪv → o-liv",
+    "type": "fruit"
+  },
+  {
+    "indonesia": "Kismis",
+    "english": "Raisin",
+    "pronunciation": "ˈreɪ.zɪn → rei-zin",
+    "type": "fruit"
+  }
+]

@@ -1,0 +1,362 @@
+[
+    {
+        "type": "noun",
+        "indonesia": "Meja",
+        "english": "Table",
+        "pronunciation": "→ tei-bel"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kursi",
+        "english": "Chair",
+        "pronunciation": "→ cher"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Pintu",
+        "english": "Door",
+        "pronunciation": "→ dor"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Jendela",
+        "english": "Window",
+        "pronunciation": "→ win-dow"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Lantai",
+        "english": "Floor",
+        "pronunciation": "→ flor"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Dinding",
+        "english": "Wall",
+        "pronunciation": "→ wol"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Atap",
+        "english": "Roof",
+        "pronunciation": "→ ruf"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Lampu",
+        "english": "Lamp",
+        "pronunciation": "→ lemp"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kipas angin",
+        "english": "Fan",
+        "pronunciation": "→ fen"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Televisi",
+        "english": "Television",
+        "pronunciation": "→ te-le-vi-zhon"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Komputer",
+        "english": "Computer",
+        "pronunciation": "→ kom-pyu-ter"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Laptop",
+        "english": "Laptop",
+        "pronunciation": "→ lep-top"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Telepon",
+        "english": "Phone",
+        "pronunciation": "→ fon"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Tablet",
+        "english": "Tablet",
+        "pronunciation": "→ teb-let"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Jam",
+        "english": "Clock",
+        "pronunciation": "→ klok"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kunci",
+        "english": "Key",
+        "pronunciation": "→ ki"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Tas",
+        "english": "Bag",
+        "pronunciation": "→ beg"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Buku",
+        "english": "Book",
+        "pronunciation": "→ buk"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Pulpen",
+        "english": "Pen",
+        "pronunciation": "→ pen"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Pensil",
+        "english": "Pencil",
+        "pronunciation": "→ pen-sil"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Penghapus",
+        "english": "Eraser",
+        "pronunciation": "→ i-rei-ser"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Buku tulis",
+        "english": "Notebook",
+        "pronunciation": "→ not-buk"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kertas",
+        "english": "Paper",
+        "pronunciation": "→ pei-per"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Penggaris",
+        "english": "Ruler",
+        "pronunciation": "→ ru-ler"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kalkulator",
+        "english": "Calculator",
+        "pronunciation": "→ kel-kyu-lei-ter"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kotak pensil",
+        "english": "Pencil case",
+        "pronunciation": "→ pen-sil keis"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Tas sekolah",
+        "english": "School bag",
+        "pronunciation": "→ skul beg"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Tempat sampah",
+        "english": "Trash bin",
+        "pronunciation": "→ tresh bin"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Piring",
+        "english": "Plate",
+        "pronunciation": "→ pleit"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Gelas",
+        "english": "Glass",
+        "pronunciation": "→ glas"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Cangkir",
+        "english": "Cup",
+        "pronunciation": "→ kap"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Sendok",
+        "english": "Spoon",
+        "pronunciation": "→ spun"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Garpu",
+        "english": "Fork",
+        "pronunciation": "→ fork"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Pisau",
+        "english": "Knife",
+        "pronunciation": "→ naif"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Mangkok",
+        "english": "Bowl",
+        "pronunciation": "→ boul"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Panci",
+        "english": "Pot",
+        "pronunciation": "→ pot"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Wajan",
+        "english": "Pan",
+        "pronunciation": "→ pen"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kulkas",
+        "english": "Refrigerator",
+        "pronunciation": "→ ri-fri-je-rei-tor"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kompor",
+        "english": "Stove",
+        "pronunciation": "→ stov"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Dapur",
+        "english": "Kitchen",
+        "pronunciation": "→ ki-chen"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Tempat tidur",
+        "english": "Bed",
+        "pronunciation": "→ bed"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Bantal",
+        "english": "Pillow",
+        "pronunciation": "→ pi-low"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Selimut",
+        "english": "Blanket",
+        "pronunciation": "→ bleng-ket"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Lemari",
+        "english": "Cupboard",
+        "pronunciation": "→ kap-bord"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Cermin",
+        "english": "Mirror",
+        "pronunciation": "→ mi-ror"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Tirai",
+        "english": "Curtain",
+        "pronunciation": "→ ker-ten"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Kamar mandi",
+        "english": "Bathroom",
+        "pronunciation": "→ bath-rum"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Shower",
+        "english": "Shower",
+        "pronunciation": "→ shau-er"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Bak mandi",
+        "english": "Bathtub",
+        "pronunciation": "→ bath-tab"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Handuk",
+        "english": "Towel",
+        "pronunciation": "→ tau-el"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Sikat gigi",
+        "english": "Toothbrush",
+        "pronunciation": "→ tuth-brash"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Pasta gigi",
+        "english": "Toothpaste",
+        "pronunciation": "→ tuth-peist"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Sabun",
+        "english": "Soap",
+        "pronunciation": "→ soap"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Sampo",
+        "english": "Shampoo",
+        "pronunciation": "→ shem-pu"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Sisir",
+        "english": "Comb",
+        "pronunciation": "→ kom"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Mobil",
+        "english": "Car",
+        "pronunciation": "→ kar"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Motor",
+        "english": "Motorcycle",
+        "pronunciation": "→ mo-ter-sai-kel"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Sepeda",
+        "english": "Bicycle",
+        "pronunciation": "→ bai-si-kel"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Jalan",
+        "english": "Road",
+        "pronunciation": "→ rod"
+    },
+    {
+        "type": "noun",
+        "indonesia": "Lampu lalu lintas",
+        "english": "Traffic light",
+        "pronunciation": "→ trefik lait"
+    }
+]
