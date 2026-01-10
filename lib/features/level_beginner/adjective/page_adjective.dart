@@ -21,7 +21,7 @@ class AdjectivePage extends StatelessWidget {
               children: [
                 cardHeader(
                     "Adjective", "Pelajari kata sifat dalam materi ini!"),
-                const SizedBox(height: 25),
+                const SizedBox(height: 50),
                 popupEnglify(
                     "Adjective (Kata sifat) adalah kata yang menunjukkan keadaan, kondisi, atau ekspresi seseorang."),
                 const SizedBox(

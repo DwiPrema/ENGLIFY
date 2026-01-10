@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_englify/core/constant/app_colors.dart';
 import 'package:project_englify/features/shared/widgets/widget_text.dart';
 import 'package:audioplayers/audioplayers.dart';
 
@@ -188,47 +189,45 @@ Widget popupEnglify(String text) {
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.end,
     children: [
-      Column(
-        children: [
-          Container(
-            width: 300,
-            decoration: BoxDecoration(
-                border: Border.all(
-                  color: const Color(0xFFB4EC51),
-                ),
-                borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(50),
-                  topRight: Radius.circular(50),
-                  bottomLeft: Radius.circular(50),
-                  bottomRight: Radius.circular(1),
-                )),
-            child: Padding(
-              padding: const EdgeInsets.all(24),
-              child: Expanded(
-                child: Text(
-                  text,
-                  style: const TextStyle(
-                    fontFamily: "JosefinSans",
-                    fontSize: 14,
-                    color: Colors.black,
-                  ),
+      Flexible(
+        flex: 3,
+        child: Container(
+          width: 300,
+          decoration: BoxDecoration(
+              border: Border.all(
+                color: AppColors.secondary,
+              ),
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(50),
+                topRight: Radius.circular(50),
+                bottomLeft: Radius.circular(50),
+                bottomRight: Radius.circular(1),
+              )),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Expanded(
+              child: Text(
+                text,
+                style: const TextStyle(
+                  fontFamily: "JosefinSans",
+                  fontSize: 14,
+                  color: Colors.black,
                 ),
               ),
             ),
           ),
-          const SizedBox(
-            height: 25,
-          ),
-        ],
+        ),
       ),
       const SizedBox(
         width: 25,
       ),
-      const Image(
-        image: AssetImage("assets/images/logo.png"),
-        width: 70,
-        alignment: Alignment.center,
-      ),
+      const Flexible(
+        flex: 1,
+        child: Image(
+          image: AssetImage("assets/images/logo_ilustration/logo_256.webp"),
+          alignment: Alignment.center,
+        ),
+      )
     ],
   );
 }
