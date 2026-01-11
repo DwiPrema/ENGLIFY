@@ -1,8 +1,10 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:project_englify/core/constant/app_colors.dart';
+import 'package:project_englify/features/identity_user/identity_controller.dart';
+import 'package:project_englify/features/identity_user/identity_model.dart';
+import 'package:project_englify/features/shared/widgets/card.dart';
 import 'package:project_englify/features/shared/widgets/widget_text.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -34,6 +36,26 @@ class _ProfileScreenState extends State<ProfileScreen> {
   void dispose() {
     _controller.dispose();
     super.dispose();
+  }
+
+  late final ControllerIdentity controllerIdentity;
+  ModelIdentity? identity;
+
+  @override
+  void initState() {
+    super.initState();
+    controllerIdentity = ControllerIdentity();
+    loadData();
+  }
+
+  Future<void> loadData() async {
+    final result = await controllerIdentity.loadIdentity();
+
+    if (!context.mounted) return;
+
+    setState(() {
+      identity = result;
+    });
   }
 
   @override
@@ -122,8 +144,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                               decoration: InputDecoration(
                                 suffix: Padding(
-                                  padding:
-                                      const EdgeInsetsGeometry.only(left: 16,),
+                                  padding: const EdgeInsetsGeometry.only(
+                                    left: 16,
+                                  ),
                                   child: GestureDetector(
                                     onTap: () {
                                       setState(() {
@@ -191,8 +214,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     textTitle(
                         "Personal Identity", TextAlign.left, AppColors.black),
-
-
+                        const SizedBox(height: 32),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        cardIdentity("name", identity?.name ?? ""),
+                        const SizedBox(height: 16),
+                        cardIdentity("age", identity?.age.toString() ?? ""),
+                        const SizedBox(height: 16),
+                        cardIdentity("birthday",
+                            identity?.birthday.toIso8601String() ?? ""),
+                      ],
+                    )
                   ],
                 ),
               ),
