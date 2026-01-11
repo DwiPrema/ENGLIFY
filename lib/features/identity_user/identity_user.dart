@@ -5,6 +5,7 @@ import 'package:project_englify/features/identity_user/identity_controller.dart'
 import 'package:project_englify/core/routes/routes.dart';
 import 'package:project_englify/features/shared/widgets/widget_text.dart';
 import 'package:project_englify/features/shared/widgets/widget_text_field.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class InDataUser extends StatefulWidget {
   const InDataUser({super.key});
@@ -102,16 +103,20 @@ class _InDataUserState extends State<InDataUser> {
                 height: 16,
               ),
               ElevatedButton(
-                onPressed: controller.isDataValid()
-                    ? () {
-                        Navigator.pushNamedAndRemoveUntil(
-                          context,
-                          AppRoutes.homeRoute,
-                          (route) => false,
-                          arguments: controller.createIdentity(),
-                        );
-                      }
-                    : null,
+                onPressed: () async {
+                  final prefs = await SharedPreferences.getInstance();
+
+                  await prefs.setBool("identity_filled", true);
+                  
+                  if (!controller.isDataValid()) return;
+
+                  await controller.saveIdentity();
+
+                  if (!context.mounted) return;
+
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, AppRoutes.homeRoute, (route) => false);
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.transparent,
                   shadowColor: Colors.transparent,

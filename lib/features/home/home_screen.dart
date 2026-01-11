@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:project_englify/core/constant/app_colors.dart';
 import 'package:project_englify/features/identity_user/identity_model.dart';
+import 'package:project_englify/features/identity_user/identity_controller.dart';
 import 'package:project_englify/features/level_beginner/level_beginner.dart';
 import 'package:project_englify/features/shared/widgets/card.dart';
+import 'package:project_englify/features/shared/widgets/widget_text.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,12 +14,34 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  late final ControllerIdentity controllerIdentity;
+  ModelIdentity? identity;
+
+  @override
+  void initState() {
+    super.initState();
+    controllerIdentity = ControllerIdentity();
+    loadData();
+  }
+
+  Future<void> loadData() async {
+    final result = await controllerIdentity.loadIdentity();
+
+    if (!context.mounted) return;
+
+    setState(() {
+      identity = result;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    final args = ModalRoute.of(context)?.settings.arguments;
-
-    final identity = args is ModelIdentity ? args : null;
-
+    if (identity == null) {
+      return Center(
+        child: textTitle("Maaf, sepertinya ada masalah !", TextAlign.center,
+            AppColors.white),
+      );
+    }
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -44,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Text(
-                      identity != null ? "Hi, ${identity.name} !" : "Hi !",
+                      identity?.name ?? "",
                       style: const TextStyle(
                         fontFamily: "JosefinSans",
                         fontSize: 20,

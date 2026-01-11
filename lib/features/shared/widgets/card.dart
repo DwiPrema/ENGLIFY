@@ -3,47 +3,6 @@ import 'package:project_englify/core/constant/app_colors.dart';
 import 'package:project_englify/features/shared/widgets/widget_text.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-Widget cardSect(
-    String imagePath, String text, Color color, VoidCallback onPres) {
-  return Material(
-    color: Colors.transparent,
-    child: InkWell(
-      onTap: onPres,
-      child: Container(
-        width: 165,
-        height: 200,
-        decoration: BoxDecoration(
-          color: color,
-          borderRadius: const BorderRadius.all(Radius.circular(25)),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image(
-                image: AssetImage(imagePath),
-                width: 120,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8),
-                child: Text(
-                  textAlign: TextAlign.center,
-                  text,
-                  style: const TextStyle(
-                    fontFamily: "JosefinSans",
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              )
-            ],
-          ),
-        ),
-      ),
-    ),
-  );
-}
-
 Widget cardLevel(IconData icon, String title, TextAlign align, String paragraph,
     VoidCallback onPres) {
   return Container(
@@ -227,6 +186,20 @@ Widget popupEnglify(String text) {
           image: AssetImage("assets/images/logo_ilustration/logo_256.webp"),
           alignment: Alignment.center,
         ),
+      )
+    ],
+  );
+}
+
+Widget cardIdentity(String label, String data) {
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      splashTextp(label, TextAlign.start),
+      textTitle(data, TextAlign.start, AppColors.black),
+      const Divider(
+        thickness: 1,
+        color: AppColors.black,
       )
     ],
   );

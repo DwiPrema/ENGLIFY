@@ -1,3 +1,4 @@
+import 'package:project_englify/features/app_init/app_init_page.dart';
 import 'package:project_englify/features/level_beginner/adjective/detailpage_adjective.dart';
 import 'package:project_englify/features/level_beginner/animal/detailpage_animal.dart';
 import 'package:project_englify/features/level_beginner/fruit/detailpage_fruit.dart';
@@ -29,8 +30,10 @@ class Englify extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: const AppInitPage(),
       initialRoute: '/',
       routes: {
+        AppRoutes.onBoarding: (context) => const MainOnboarding(),
         AppRoutes.alphabetPageRoute: (context) => const AlphabetPage(),
         AppRoutes.numberPageRoute: (context) => const NumberPage(),
         AppRoutes.fruitPageRoute: (context) => const FruitPage(),
@@ -49,7 +52,6 @@ class Englify extends StatelessWidget {
         AppRoutes.homeRoute: (context) => const Home(),
         AppRoutes.inDataUserRoute: (context) => const InDataUser(),
       },
-      home: const MainOnboarding(),
     );
   }
 }

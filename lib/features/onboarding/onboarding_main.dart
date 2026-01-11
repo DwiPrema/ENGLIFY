@@ -8,10 +8,6 @@ import 'package:project_englify/core/routes/routes.dart';
 import 'package:project_englify/features/shared/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainOnboarding());
-}
-
 class MainOnboarding extends StatefulWidget {
   const MainOnboarding({super.key});
 

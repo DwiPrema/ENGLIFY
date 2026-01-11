@@ -1,4 +1,6 @@
 class AppRoutes {
+  static const onBoarding = '/onBoarding';
+
   static const inDataUserRoute = '/inDataUser';
   static const homeRoute = '/home';
   static const levelBeginnerRoute = '/beginner';
