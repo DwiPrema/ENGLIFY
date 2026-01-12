@@ -19,9 +19,14 @@ class VerbPage extends StatelessWidget {
             child: Column(
               children: [
                 cardHeader("Verb", "Pelajari kata kerja dalam materi ini!"),
-                const SizedBox(height: 35),
+                const SizedBox(height: 50),
+                popupEnglify(
+                    "Verb (kata kerja) adalah kata yang digunakan untuk menyatakan tindakan, aktivitas, kejadian, atau keadaan."),
+                const SizedBox(
+                  height: 50,
+                ),
                 textTitle("Pelajari", TextAlign.center, Colors.black),
-                const SizedBox(height: 35),
+                const SizedBox(height: 25),
                 GridView(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
