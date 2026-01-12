@@ -32,7 +32,7 @@ Widget cardLevel(IconData icon, String title, TextAlign align, String paragraph,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Flexible(
-                child: lightText(paragraph, const Color(0xff242424)),
+                child: labelText(paragraph, const Color(0xff242424)),
               ),
               const SizedBox(
                 width: 16,
@@ -195,8 +195,9 @@ Widget cardIdentity(String label, String data) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      splashTextp(label, TextAlign.start),
-      textTitle(data, TextAlign.start, AppColors.black),
+      labelText(label, AppColors.paragraph),
+      const SizedBox(height: 4),
+      littleText(data, TextAlign.start),
       const Divider(
         thickness: 1,
         color: AppColors.black,

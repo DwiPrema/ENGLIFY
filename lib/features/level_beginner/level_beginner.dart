@@ -35,7 +35,7 @@ class BeginnerPage extends StatelessWidget {
                   children: [
                     textTitle("Beginner (A1)", TextAlign.left, AppColors.black),
                     const SizedBox(height: 8),
-                    lightText(
+                    labelText(
                         "Pada level ini, pengguna akan belajar kosakata dan kalimat sederhana yang sering digunakan dalam kehidupan sehari-hari.",
                         const Color(0xff242424)),
                   ],

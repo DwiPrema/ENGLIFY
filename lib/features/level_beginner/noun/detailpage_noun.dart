@@ -18,7 +18,7 @@ class DetailNounPage extends StatelessWidget {
             children: [
               // Bagian Header
               cardHeader(
-                  "Noun", "Pelajari nama nama hewan dalam bahasa inggris"),
+                  "Noun", "Pelajari kata benda dalam bahasa inggris"),
               const SizedBox(height: 30),
 
               // Bagian Tabel

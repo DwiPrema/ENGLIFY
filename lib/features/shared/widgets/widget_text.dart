@@ -26,7 +26,7 @@ Widget textTitle(String text, TextAlign align, Color textColor) {
   );
 }
 
-Widget lightText(String text, Color textColor) {
+Widget labelText(String text, Color textColor) {
   return Text(
     text,
     style: TextStyle(

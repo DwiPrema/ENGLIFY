@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:project_englify/core/constant/app_colors.dart';
 import 'package:project_englify/features/identity_user/identity_model.dart';
@@ -67,14 +68,44 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text(
-                      identity?.name ?? "",
-                      style: const TextStyle(
-                        fontFamily: "JosefinSans",
-                        fontSize: 20,
-                        fontWeight: FontWeight.w400,
-                        color: AppColors.white,
-                      ),
+                    AnimatedTextKit(
+                      pause: const Duration(milliseconds: 3000),
+                      animatedTexts: [
+                        TypewriterAnimatedText(
+                          cursor: "",
+                          "Hello, ${identity?.name} !!",
+                          textStyle: const TextStyle(
+                            fontFamily: "JosefinSans",
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400,
+                            color: AppColors.white,
+                          ),
+                          speed: const Duration(milliseconds: 100),
+                        ),
+                        TypewriterAnimatedText(
+                          cursor: "",
+                          "Welcome to Englify !!",
+                          textStyle: const TextStyle(
+                            fontFamily: "JosefinSans",
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400,
+                            color: AppColors.white,
+                          ),
+                          speed: const Duration(milliseconds: 100),
+                        ),
+                        TypewriterAnimatedText(
+                          cursor: "",
+                          "Nice to meet you !!",
+                          textStyle: const TextStyle(
+                            fontFamily: "JosefinSans",
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400,
+                            color: AppColors.white,
+                          ),
+                          speed: const Duration(milliseconds: 100),
+                        )
+                      ],
+                      repeatForever: true,
                     ),
                     const Text(
                       "Let's start your study !!",
@@ -98,19 +129,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Day 1",
-                      style: TextStyle(
-                        fontFamily: "JosefinSans",
-                        fontSize: 31,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.white,
-                      ),
-                    ),
-                    Text(
                       "“Learn English From Zero to Advance”",
                       style: TextStyle(
                         fontFamily: "Poppins",
-                        fontSize: 16,
+                        fontSize: 13,
                         fontWeight: FontWeight.w400,
                         color: Color(0xffA8A8A8),
                       ),
@@ -125,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   topLeft: Radius.circular(25), topRight: Radius.circular(25)),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(32),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
               child: Column(
                 children: [
                   const Align(
@@ -175,8 +197,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       TextAlign.left,
                       "Level lanjut untuk memperdalam kelancaran dan ekspresi alami.",
                       () {}),
-                  const SizedBox(
-                    height: 70,
+                  SizedBox(
+                    height: MediaQuery.of(context).padding.bottom * 2 + 16,
                   ),
                 ],
               ),
