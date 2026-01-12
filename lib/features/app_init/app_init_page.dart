@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_englify/core/constant/app_colors.dart';
 import 'package:project_englify/core/routes/routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -33,7 +34,7 @@ class _AppInitPageState extends State<AppInitPage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: AppColors.mainBg,
       body: Center(child: CircularProgressIndicator()),
     );
   }
