@@ -6,6 +6,7 @@ import 'package:project_englify/features/identity_user/identity_controller.dart'
 import 'package:project_englify/features/identity_user/identity_model.dart';
 import 'package:project_englify/features/shared/widgets/card.dart';
 import 'package:project_englify/features/shared/widgets/widget_text.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -22,6 +23,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Future<void> _pickImage() async {
     final pickedFile = await _picker.pickImage(source: ImageSource.gallery);
     if (pickedFile != null) {
+      await _saveImagePath(pickedFile.path);
       setState(() {
         _image = File(pickedFile.path);
       });
@@ -31,6 +33,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
   String bio = "No bio yet...";
   bool isEditing = false;
   final TextEditingController _controller = TextEditingController();
+
+  static const String bioKey = 'user_bio';
+  static const String imagePathKey = 'profile_image_path';
 
   @override
   void dispose() {
@@ -46,6 +51,25 @@ class _ProfileScreenState extends State<ProfileScreen> {
     super.initState();
     controllerIdentity = ControllerIdentity();
     loadData();
+    _loadProfileData();
+  }
+
+  Future<void> _loadProfileData() async {
+    final prefs = await SharedPreferences.getInstance();
+    final savedBio = prefs.getString(bioKey);
+    final savedImagePath = prefs.getString(imagePathKey);
+
+    if (savedBio != null) {
+      setState(() {
+        bio = savedBio;
+      });
+    }
+
+    if (savedImagePath != null) {
+      setState(() {
+        _image = File(savedImagePath);
+      });
+    }
   }
 
   Future<void> loadData() async {
@@ -56,6 +80,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
     setState(() {
       identity = result;
     });
+  }
+
+  Future<void> _saveBio(String value) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(bioKey, value);
+  }
+
+  Future<void> _saveImagePath(String path) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(imagePathKey, path);
   }
 
   @override
@@ -148,11 +182,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     left: 16,
                                   ),
                                   child: GestureDetector(
-                                    onTap: () {
+                                    onTap: () async {
+                                      final newBio = _controller.text.isEmpty
+                                          ? "No bio yet..."
+                                          : _controller.text;
+
+                                      await _saveBio(newBio);
+
                                       setState(() {
-                                        bio = _controller.text.isEmpty
-                                            ? "No bio yet..."
-                                            : _controller.text;
+                                        bio = newBio;
                                         isEditing = false;
                                       });
                                     },
@@ -214,7 +252,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     textTitle(
                         "Personal Identity", TextAlign.left, AppColors.black),
-                        const SizedBox(height: 32),
+                    const SizedBox(height: 32),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
