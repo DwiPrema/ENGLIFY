@@ -56,6 +56,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: AppColors.secBg,
       body: SafeArea(
         bottom: false,
@@ -69,9 +70,9 @@ class _HomeState extends State<Home> {
               ],
             ),
             Positioned(
-              left: 32,
-              right: 32,
-              bottom: MediaQuery.of(context).padding.bottom,
+              left: 16,
+              right: 16,
+              bottom: MediaQuery.of(context).padding.bottom + 16,
               child: Container(
                   height: 60,
                   decoration: BoxDecoration(
