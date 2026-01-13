@@ -1,6 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:project_englify/core/constant/app_colors.dart';
 
+Widget englifyText(String text, TextAlign align, double size) {
+  return Stack(
+    children: [
+      Text(
+        text,
+        textAlign: align,
+        style: TextStyle(
+          fontFamily: "Modak",
+          fontSize: size,
+          foreground: Paint()
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 6
+            ..color = AppColors.black,
+        ),
+      ),
+      Text(
+        text,
+        textAlign: align,
+        style: TextStyle(
+          fontFamily: "Modak",
+          fontSize: size,
+          color: AppColors.white,
+        ),
+      ),
+    ],
+  );
+}
+
 Widget littleText(String text, TextAlign align) {
   return Text(
     textAlign: align,
