@@ -6,7 +6,9 @@ class Splash3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -20,6 +22,7 @@ class Splash3 extends StatelessWidget {
         splashTexth1("Boost Your Confidence", TextAlign.center),
         splashTextp("Build confidence in English for school and your future.", TextAlign.center)
       ],
+    ),
     );
   }
 }

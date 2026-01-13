@@ -94,216 +94,199 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Stack(
-      children: [
-        SingleChildScrollView(
-          child: Center(
-            child: Column(
+    return SingleChildScrollView(
+      child: Center(
+        child: Column(
+          children: [
+            const Text(
+              "Profile",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: "JosefinSans",
+                fontSize: 31,
+                fontWeight: FontWeight.w400,
+                color: AppColors.white,
+                decoration: TextDecoration.none,
+              ),
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            Stack(
               children: [
-                const Text(
-                  "Profile",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: "JosefinSans",
-                    fontSize: 31,
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.white,
-                    decoration: TextDecoration.none,
+                Container(
+                  padding: const EdgeInsets.all(1),
+                  decoration: const BoxDecoration(
+                      color: AppColors.white, shape: BoxShape.circle),
+                  child: CircleAvatar(
+                    radius: 70,
+                    backgroundImage: _image != null
+                        ? FileImage(_image!)
+                        : const AssetImage("assets/images/profile_default.jpg")
+                            as ImageProvider,
                   ),
                 ),
-                const SizedBox(
-                  height: 25,
-                ),
-                Stack(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(1),
+                Positioned(
+                  bottom: 0,
+                  right: 0,
+                  child: GestureDetector(
+                    onTap: _pickImage,
+                    child: Container(
+                      padding: const EdgeInsets.all(7),
                       decoration: const BoxDecoration(
-                          color: AppColors.white, shape: BoxShape.circle),
-                      child: CircleAvatar(
-                        radius: 70,
-                        backgroundImage: _image != null
-                            ? FileImage(_image!)
-                            : const AssetImage(
-                                    "assets/images/profile_default.jpg")
-                                as ImageProvider,
+                          color: AppColors.primary, shape: BoxShape.circle),
+                      child: const Icon(
+                        Icons.edit,
+                        size: 25,
+                        color: AppColors.black,
                       ),
                     ),
-                    Positioned(
-                      bottom: 0,
-                      right: 0,
-                      child: GestureDetector(
-                        onTap: _pickImage,
-                        child: Container(
-                          padding: const EdgeInsets.all(7),
-                          decoration: const BoxDecoration(
-                              color: AppColors.primary, shape: BoxShape.circle),
-                          child: const Icon(
-                            Icons.edit,
-                            size: 25,
-                            color: AppColors.black,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            Padding(
+              padding: EdgeInsetsGeometry.symmetric(
+                  horizontal: MediaQuery.of(context).padding.horizontal),
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                    maxWidth: MediaQuery.of(context).size.width / 1.2),
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      isEditing = true;
+                      _controller.text = bio == "No bio yet..." ? "" : bio;
+                    });
+                  },
+                  child: AnimatedSize(
+                    duration: const Duration(milliseconds: 200),
+                    curve: Curves.easeInOut,
+                    child: isEditing
+                        ? Center(
+                            child: TextField(
+                              maxLines: null,
+                              maxLength: 150,
+                              controller: _controller,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                color: AppColors.paragraph2,
+                                fontSize: 16,
+                                fontFamily: "Poppins",
+                              ),
+                              decoration: InputDecoration(
+                                suffix: Padding(
+                                  padding: const EdgeInsetsGeometry.only(
+                                    left: 16,
+                                  ),
+                                  child: GestureDetector(
+                                    onTap: () async {
+                                      final newBio = _controller.text.isEmpty
+                                          ? "No bio yet..."
+                                          : _controller.text;
+
+                                      await _saveBio(newBio);
+
+                                      setState(() {
+                                        bio = newBio;
+                                        isEditing = false;
+                                      });
+                                    },
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 7, vertical: 3),
+                                      decoration: BoxDecoration(
+                                          color: AppColors.primary,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: const Icon(
+                                        Icons.done_rounded,
+                                        size: 20,
+                                        color: AppColors.black,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                isDense: true,
+                                counter: const SizedBox.shrink(),
+                                contentPadding: EdgeInsets.zero,
+                                border: const UnderlineInputBorder(
+                                    borderSide: BorderSide.none),
+                                hintText: "No bio yet...",
+                              ),
+                            ),
+                          )
+                        : Center(
+                            child: Text(
+                              bio,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                color: AppColors.paragraph2,
+                                fontSize: 16,
+                                fontFamily: "Poppins",
+                              ),
+                            ),
                           ),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 48,
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height -
+                  MediaQuery.of(context).padding.bottom,
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                color: AppColors.mainBg,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(25),
+                    topRight: Radius.circular(25)),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(32),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    textTitle(
+                        "Personal Identity", TextAlign.left, AppColors.black),
+                    const SizedBox(height: 32),
+                    AnimatedSlide(
+                      offset:
+                          identity == null ? const Offset(0, 0.1) : Offset.zero,
+                      duration: const Duration(milliseconds: 300),
+                      curve: Curves.easeInOut,
+                      child: AnimatedOpacity(
+                        opacity: identity == null ? 0 : 1,
+                        duration: const Duration(milliseconds: 300),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            cardIdentity("name", identity?.name ?? ""),
+                            const SizedBox(height: 24),
+                            cardIdentity("age", identity?.age.toString() ?? ""),
+                            const SizedBox(height: 24),
+                            cardIdentity(
+                                "birthday",
+                                identity?.birthday
+                                        .toIso8601String()
+                                        .split("T")
+                                        .first ??
+                                    ""),
+                          ],
                         ),
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 25,
-                ),
-                Padding(
-                  padding: EdgeInsetsGeometry.symmetric(
-                      horizontal: MediaQuery.of(context).padding.horizontal),
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(
-                        maxWidth: MediaQuery.of(context).size.width / 1.2),
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          isEditing = true;
-                          _controller.text = bio == "No bio yet..." ? "" : bio;
-                        });
-                      },
-                      child: AnimatedSize(
-                        duration: const Duration(milliseconds: 200),
-                        curve: Curves.easeInOut,
-                        child: isEditing
-                            ? Center(
-                                child: TextField(
-                                  maxLines: null,
-                                  maxLength: 150,
-                                  controller: _controller,
-                                  textAlign: TextAlign.center,
-                                  style: const TextStyle(
-                                    color: AppColors.paragraph2,
-                                    fontSize: 16,
-                                    fontFamily: "Poppins",
-                                  ),
-                                  decoration: InputDecoration(
-                                    suffix: Padding(
-                                      padding: const EdgeInsetsGeometry.only(
-                                        left: 16,
-                                      ),
-                                      child: GestureDetector(
-                                        onTap: () async {
-                                          final newBio =
-                                              _controller.text.isEmpty
-                                                  ? "No bio yet..."
-                                                  : _controller.text;
-
-                                          await _saveBio(newBio);
-
-                                          setState(() {
-                                            bio = newBio;
-                                            isEditing = false;
-                                          });
-                                        },
-                                        child: Container(
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 7, vertical: 3),
-                                          decoration: BoxDecoration(
-                                              color: AppColors.primary,
-                                              borderRadius:
-                                                  BorderRadius.circular(5)),
-                                          child: const Icon(
-                                            Icons.done_rounded,
-                                            size: 20,
-                                            color: AppColors.black,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    isDense: true,
-                                    counter: const SizedBox.shrink(),
-                                    contentPadding: EdgeInsets.zero,
-                                    border: const UnderlineInputBorder(
-                                        borderSide: BorderSide.none),
-                                    hintText: "No bio yet...",
-                                  ),
-                                ),
-                              )
-                            : Center(
-                                child: Text(
-                                  bio,
-                                  textAlign: TextAlign.center,
-                                  style: const TextStyle(
-                                    color: AppColors.paragraph2,
-                                    fontSize: 16,
-                                    fontFamily: "Poppins",
-                                  ),
-                                ),
-                              ),
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 48,
-                ),
-              ],
+              ),
             ),
-          ),
+          ],
         ),
-        DraggableScrollableSheet(
-            initialChildSize: 0.60,
-            minChildSize: 0.60,
-            maxChildSize: 1.0,
-            builder: (context, scrollController) {
-              return SingleChildScrollView(
-                controller: scrollController,
-                child: Container(
-                  height: MediaQuery.of(context).size.height,
-                  width: double.infinity,
-                  decoration: const BoxDecoration(
-                    color: AppColors.mainBg,
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(25),
-                        topRight: Radius.circular(25)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(32),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        textTitle("Personal Identity", TextAlign.left,
-                            AppColors.black),
-                        const SizedBox(height: 32),
-                        AnimatedSlide(
-                          offset: identity == null
-                              ? const Offset(0, 0.1)
-                              : Offset.zero,
-                          duration: const Duration(milliseconds: 300),
-                          curve: Curves.easeOut,
-                          child: AnimatedOpacity(
-                            opacity: identity == null ? 0 : 1,
-                            duration: const Duration(milliseconds: 300),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                cardIdentity("name", identity?.name ?? ""),
-                                const SizedBox(height: 24),
-                                cardIdentity(
-                                    "age", identity?.age.toString() ?? ""),
-                                const SizedBox(height: 24),
-                                cardIdentity(
-                                    "birthday",
-                                    identity?.birthday
-                                            .toIso8601String()
-                                            .split("T")
-                                            .first ??
-                                        ""),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            })
-      ],
-    ));
+      ),
+    );
   }
 }

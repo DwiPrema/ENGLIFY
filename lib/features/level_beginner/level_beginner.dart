@@ -21,10 +21,10 @@ class BeginnerPage extends StatelessWidget {
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16),
-                  gradient: const LinearGradient(
+                  gradient: LinearGradient(
                     colors: [
-                      AppColors.primary,
-                      AppColors.secondary,
+                      AppColors.primary.withValues(alpha: 0.8),
+                      AppColors.secondary.withValues(alpha: 0.9),
                     ],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
@@ -85,7 +85,7 @@ class BeginnerPage extends StatelessWidget {
                             gradient: const LinearGradient(
                               colors: [
                                 AppColors.secondary,
-                                Color(0xFF1F4C6B),
+                                AppColors.secBg,
                               ],
                               begin: Alignment.topCenter,
                               end: Alignment.bottomCenter,

@@ -6,21 +6,25 @@ class Splash2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Image.asset(
-          "assets/images/logo_ilustration/splash2_ilustration.webp",
-          width: 200,
-        ),
-        const SizedBox(
-          height: 16,
-        ),
-        splashTexth1("Practice Every Day", TextAlign.center),
-        splashTextp("Practice vocabulary, grammar, and pronunciation anytime.",
-            TextAlign.center)
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(
+            "assets/images/logo_ilustration/splash2_ilustration.webp",
+            width: 200,
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          splashTexth1("Practice Every Day", TextAlign.center),
+          splashTextp(
+              "Practice vocabulary, grammar, and pronunciation anytime.",
+              TextAlign.center)
+        ],
+      ),
     );
   }
 }

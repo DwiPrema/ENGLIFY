@@ -25,7 +25,7 @@ class _MainOnboardingState extends State<MainOnboarding> {
       backgroundColor: AppColors.mainBg,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+          padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 40),
           child: Column(
             children: [
               if (_currentPage != 3)
@@ -38,7 +38,12 @@ class _MainOnboardingState extends State<MainOnboarding> {
                           MaterialPageRoute(
                               builder: (context) => const InDataUser()));
                     },
-                    child: splashTextp("Skip", TextAlign.center),
+                    child: Padding(
+                      padding: const EdgeInsetsGeometry.symmetric(
+                        horizontal: 24,
+                      ),
+                      child: splashTextp("Skip", TextAlign.center),
+                    ),
                   ),
                 ),
               Expanded(
@@ -74,45 +79,48 @@ class _MainOnboardingState extends State<MainOnboarding> {
               const SizedBox(
                 height: 48,
               ),
-              ElevatedButton(
-                onPressed: () {
-                  if (_currentPage == 3) {
-                    Navigator.pushNamed(context, AppRoutes.inDataUserRoute);
-                  } else {
-                    _pageController.nextPage(
-                      duration: const Duration(milliseconds: 300),
-                      curve: Curves.ease,
-                    );
-                  }
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.transparent,
-                  shadowColor: Colors.transparent,
-                  padding: EdgeInsets.zero,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                ),
-                child: Ink(
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [
-                        AppColors.secondary,
-                        AppColors.primary,
-                      ],
-                      begin: Alignment.centerLeft,
-                      end: Alignment.centerRight,
+              Padding(
+                padding: const EdgeInsetsGeometry.symmetric(horizontal: 24),
+                child: ElevatedButton(
+                  onPressed: () {
+                    if (_currentPage == 3) {
+                      Navigator.pushNamed(context, AppRoutes.inDataUserRoute);
+                    } else {
+                      _pageController.nextPage(
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.ease,
+                      );
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.transparent,
+                    shadowColor: Colors.transparent,
+                    padding: EdgeInsets.zero,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
                     ),
-                    borderRadius: BorderRadius.circular(15),
                   ),
-                  child: Container(
-                    alignment: Alignment.center,
-                    width: double.infinity,
-                    height: 52,
-                    child: textTitle(
-                        _currentPage == 3 ? "Get Started" : "Continue",
-                        TextAlign.center,
-                        AppColors.white),
+                  child: Ink(
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [
+                          AppColors.secondary,
+                          AppColors.primary,
+                        ],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                      ),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Container(
+                      alignment: Alignment.center,
+                      width: double.infinity,
+                      height: 52,
+                      child: textTitle(
+                          _currentPage == 3 ? "Get Started" : "Continue",
+                          TextAlign.center,
+                          AppColors.white),
+                    ),
                   ),
                 ),
               ),

@@ -28,7 +28,7 @@ class ModelDetailPage extends StatelessWidget {
           return ListView.builder(
             shrinkWrap: true,
             physics:
-                const NeverScrollableScrollPhysics(), // biar tetap bisa scroll di SingleChildScrollView
+                const NeverScrollableScrollPhysics(),
             itemCount: list.length,
             itemBuilder: (context, index) {
               final item = list[index];
@@ -39,11 +39,11 @@ class ModelDetailPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: AppColors.white,
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.grey.shade300, width: 1),
+                  border: Border.all(color: AppColors.paragraph2, width: 1),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.shade100,
-                      offset: const Offset(0, 2),
+                      color: AppColors.secBg.withValues(alpha: 0.4),
+                      offset: const Offset(0, 3),
                       blurRadius: 3,
                     ),
                   ],
