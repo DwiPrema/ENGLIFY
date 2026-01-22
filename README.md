@@ -1,3 +1,2 @@
-# project_englify
-
-A new Flutter project.
+# Englify
+An english educational application
